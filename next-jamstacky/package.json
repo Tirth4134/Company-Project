@@ -1,0 +1,45 @@
+{
+  "name": "next-jamstacky",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.4",
+    "@mui/material": "^5.15.4",
+    "@portabletext/react": "^3.0.11",
+    "@sanity/image-url": "^1.0.2",
+    "bootstrap": "^5.3.2",
+    "carousel": "^0.0.3",
+    "next": "14.0.4",
+    "next-sanity-image": "^6.1.1",
+    "react": "^18",
+    "react-bootstrap": "^2.9.2",
+    "react-dom": "^18",
+    "react-icons": "^4.12.0",
+    "react-multi-carousel": "^2.8.4",
+    "react-portable-text": "^0.6.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-slick": "^0.29.0",
+    "sanity-plugin-simpler-color-input": "^2.0.0",
+    "slick-carousel": "^1.8.1",
+    "vision": "^5.4.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}

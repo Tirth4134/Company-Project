@@ -1,0 +1,14 @@
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .slide {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slide:hover {
+    transform: scale(1.05);
+  }
+  
