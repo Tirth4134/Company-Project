@@ -1,3 +1,4 @@
+import Blog_home from '@/components/Blog_home'
 import Edge_caseStudy from '@/components/Edge_caseStudy'
 import Homehero from '@/components/Homehero'
 import Homestaff_images from '@/components/Homestaff_images'
@@ -17,7 +18,7 @@ export default async function page() {
         
         return(   
             <>
-        
+            
              <Homehero />
             <CaseStudy />
             <Hometechnology />
