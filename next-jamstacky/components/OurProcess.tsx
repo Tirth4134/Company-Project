@@ -7,10 +7,8 @@ interface IOurPro{
     heading:string;
     title:string;
     processTrack:any;
-    tool:string
-    
-
-
+    tool:string,
+	time_image:string;
 }
 
 
@@ -20,6 +18,7 @@ async function getData(){
         heading,
         title,
         processTrack,
+		time_image,
     }`
     const data = await client.fetch(query);
     return data as IOurPro[];
@@ -44,6 +43,7 @@ const OurProcess = async () => {
 											listNum = `${i + 1}`;
 										}
 										return (
+											<div>
 											<div key={list._key} className=" flex  items-center  flex-col gap-[0.9rem] after:overflow-hidden  ">
                                             
 												<img
@@ -51,15 +51,19 @@ const OurProcess = async () => {
 													alt={list.alt}
 													className="w-[3.125rem]"
 												/>
-                                             
 												<span className=" bg-blue ml-[0.5rem]   z-[1] rounded-[50%]  flex items-center justify-center w-[2.063rem] h-[2.063rem] py-[0.5rem]  px-[0.6rem] text-[0.83388rem] font-montserrat text-whitecolor font-[600]">{listNum}</span>
 												<p className="text-[1.04238rem] font-[600] leading-[1.31013rem] font-montserrat text-blue">{list.title}</p>
+											</div>
+											
 											</div>
 										);
 									})}
 								</ul>
-								<img  src='' />
+								
 							</div>
+							<div className='rounded'>
+					<img  src={urlFor(content?.time_image).url()} alt='time-image'  />
+					</div>
             </div>
         )
     })}</div>

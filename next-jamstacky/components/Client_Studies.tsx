@@ -14,6 +14,7 @@ interface IClient {
   button: string;
   label: any;
   slug: any;
+  time_image:string;
 }
 
 async function getData() {
@@ -21,6 +22,7 @@ async function getData() {
       _id,
         heading,
         studies_list,
+        time_image,
     }`;
   const data = await client.fetch(query);
   return data as IClient[];
@@ -64,6 +66,7 @@ const Client_Studies = async () => {
                 );
               })}
             </div>
+            <img src={urlFor(item?.time_image).url()} />
           </div>
         );
       })}

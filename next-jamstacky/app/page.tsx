@@ -4,6 +4,7 @@ import Homehero from '@/components/Homehero'
 import Homestaff_images from '@/components/Homestaff_images'
 import Hometechnology from '@/components/Hometechnology'
 import Our_blog from '@/components/Our_blog'
+import TechnologiesforJam from '@/components/TechnologiesforJam'
 import WhatpeopleSay from '@/components/WhatpeopleSay'
 import CaseStudy from '@/components/caseStudy'
 // import Jamstack from '.'
@@ -26,6 +27,8 @@ export default async function page() {
             <WhatpeopleSay />
             <Our_blog />
             <Homestaff_images /> 
+
+
             
             </>
         );

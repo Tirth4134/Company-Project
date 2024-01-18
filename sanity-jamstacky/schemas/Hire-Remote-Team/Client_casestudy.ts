@@ -57,5 +57,10 @@ export default {
         },
       ],
     },
+    {
+      name:'time_image',
+      title:'Time Image',
+      type:'image',
+  }
   ],
 }

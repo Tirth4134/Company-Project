@@ -15,8 +15,10 @@ import hero_section_case_study_page from './hero_section_case_study_page'
 import homeHero_section from './homeHero_section'
 import home_technology_section from './home_technology_section'
 import homestaff_image from './homestaff_image'
+import letsChat_pages from './let\'s_chat'
 import our_blog from './our_blog'
 import pagesTypes from './pages'
+import privacy from './privacy'
 
 export const schemaTypes = [
   homeHero_section,
@@ -37,4 +39,8 @@ export const schemaTypes = [
   ...compare_pages,
     book_meeting,
     estimateProject,
+    privacy,
+  ...letsChat_pages,
+
+
 ]
