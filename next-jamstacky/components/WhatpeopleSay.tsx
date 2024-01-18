@@ -8,6 +8,7 @@ import { PortableTextBlock } from "sanity";
 import Image from "next/image";
 import { urlFor } from "@/imageBuilder/urlFor";
 import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 interface IWhatSay {
   _id: string;
