@@ -1,8 +1,8 @@
 export default {
   name: 'contact_detail',
   title: 'Contact Detail',
-  type: 'document',
-  forlds: [
+  type:'document',
+  fields:[
     {
       name: 'title',
       title: 'Title',
