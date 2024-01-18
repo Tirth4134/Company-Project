@@ -44,7 +44,7 @@ const Our_blog = async () => {
               return (
                 <div className="px-10 m-auto">
                   <div className="max-w-[850px]  em:text-left mb-[10px] ">
-                    <p className="font-medium leading-[1.25em] text-[20px] lg:text-[24px] xl:text-[28px] font-DM text-title-blue-shade">
+                    <p className="font-medium leading-[1.25em] text-[20px] lg:text-[24px] xl:text-[28px] font-DM text-title-blue-shade pb-10">
                       {item?.heading}
                     </p>
                   </div>
@@ -52,7 +52,7 @@ const Our_blog = async () => {
                     {item?.blog.map((list: any) => {
                       console.log(list?.arrow_image);
                       return (
-                        <div>
+                        <div className="">
                           <img
                             src={urlFor(list?.blog_image).url()}
                             alt="dlkjf"
@@ -66,22 +66,23 @@ const Our_blog = async () => {
                               return (
                                 <Link
                                   href={btn?.slug?.current}
-                                  className="mx-3  bg-[#F4FBFF] rounded-lg p-1"
+                                  className="mx-3 bg-[#F4FBFF] rounded-lg p-1"
                                 >
                                   {btn?.label}
                                 </Link>
                               );
                             })}
                           </div>
-                          <div className="[&>h1]:text-blue [&>h1]:text-2xl [&>h1]:font-medium w-[400px]">
+                          <div className="[&>h1]:text-blue [&>h1]:text-2xl [&>h1]:font-medium w-[400px] ">
                             <PortableText value={list?.blog_description} />
                           </div>
 
                           <img
                             src={urlFor(list?.arrow_image).url()}
                             alt="arrow"
-                            width={20}
-                            height={10}
+                            width={30}
+                            height={20}
+                            className="mt-6"
                           />
                         </div>
                       );
@@ -90,7 +91,7 @@ const Our_blog = async () => {
                   <div className="text-center">
                     <Link
                       className=" mt-[2.75em] mx-auto my-0
-                inline-block bg-[#DA3654]  leading-[1.25em] font-bold text-white cursor-pointer text-[12.6px]  md:text-[15.75px] lg:text-[18px] px-[2em] md:px-[1.5em] py-[1em] md:py-[1em] rounded-[3.5em] hover:bg-dark-blue "
+                inline-block bg-[#DA3654]  leading-[1.25em] font-bold  hover:bg-blue duration-700 text-white cursor-pointer text-[12.6px]  md:text-[15.75px] lg:text-[18px] px-[2em] md:px-[1.5em] py-[1em] md:py-[1em] rounded-[3.5em] mb-8"
                       href={item?.view_more_blogs_button.slug.current}
                     >
                       {item?.view_more_blogs_button.label}

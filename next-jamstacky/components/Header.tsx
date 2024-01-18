@@ -1,4 +1,4 @@
- "use client";
+"use client";
 import client from "@/client/sanity.client";
 import { urlFor } from "@/imageBuilder/urlFor";
 import { HiOutlineMenu } from "react-icons/hi";
@@ -55,14 +55,6 @@ const Header = async () => {
                   width={219}
                   height={41}
                 />
-            <div className="flex items-center gap-[0.56rem]">
-            <Link href={"/"}>  
-                <img
-                src={urlFor(list?.logo).url()}
-                alt=""
-                width={180}
-                height={180}
-              />
               </Link>
               {/* <h3 className="text-[2.125rem] font-[500] leading-[2.65625rem] text-center text-blue max-w-[11.0625rem] font-dmSans">{data.logo.logo_text}</h3> */}
             </div>
@@ -96,5 +88,3 @@ const Header = async () => {
 };
 
 export default Header;
-
-
