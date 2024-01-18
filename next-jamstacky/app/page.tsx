@@ -18,7 +18,7 @@ export default async function page() {
         
         return(   
             <>
-            
+                <Blog_home />
              <Homehero />
             <CaseStudy />
             <Hometechnology />
