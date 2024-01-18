@@ -58,6 +58,7 @@ const OurProcess = async () => {
 										);
 									})}
 								</ul>
+								<img  src='' />
 							</div>
             </div>
         )

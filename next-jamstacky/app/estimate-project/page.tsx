@@ -35,7 +35,7 @@ const page = async () => {
         console.log(item);    
         return (
           <div>
-            <div className="container">
+            
               <div className="flex flex-col-reverse lg:flex-row justify-between items-center bg-white-shad-color mx-0 mt-8 xl:mt-[4.5em] sm:px-10 sm:py-20 px-6 esm:px-8 py-12">
                 <div className="w-full lg:w-6/12">
                   <h6 className="font-bold leading-[1.25em] tracking-[0.012em] capitalize mb-4 text-lg">
@@ -148,7 +148,7 @@ const page = async () => {
                 </div>
               </div>
             </div>
-          </div>
+         
         );
       })}
     </div>
