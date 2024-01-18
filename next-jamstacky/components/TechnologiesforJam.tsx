@@ -7,6 +7,7 @@ import React, { useState } from "react";
 interface Itech {
   technologyList: any;
   title: string;
+  label:any;
 }
 
 async function getList() {
@@ -17,7 +18,7 @@ async function getList() {
     technologyList
   }`;
   const data = await client.fetch(query);
-  return data;
+  return data as Itech[];
 }
 
 const TechnologiesforJam = async () => {
@@ -29,7 +30,7 @@ const TechnologiesforJam = async () => {
   console.log(techType);
 
   const data = await getList();
-  console.log(data);
+  // console.log(data);
 
   return (
     <div>
@@ -47,7 +48,7 @@ const TechnologiesforJam = async () => {
                     <label
                       htmlFor={btn.label}
                       className="outline-none text-buttoncolor font-[500] border-b-[0.125rem] border-b-transparent hover:border-titlecolor hover:opacity-100 text-[0.875rem]  mb:text-[0.9rem] md:text-[1rem] group-hover:opacity-100
-                                                   cursor-pointer        "
+                                 cursor-pointer        "
                     >
                       {btn.label}
                     </label>
@@ -84,7 +85,7 @@ const TechnologiesforJam = async () => {
                     );
                   })
                 : item.technologyList
-                    .filter((list: any) => list.techType == techType)
+                    .filter((list: any) => list.techType == techType.label)
                     .map((list: any) => {
                       return (
                         <li
@@ -111,3 +112,4 @@ const TechnologiesforJam = async () => {
 };
 
 export default TechnologiesforJam;
+
