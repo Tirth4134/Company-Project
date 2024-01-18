@@ -43,11 +43,11 @@ const Blog_home = async () => {
                     {item?.heading}
                   </h1>
                 </div>
-                <div className="flex font-DM">
+                {/* <div className="flex font-DM">
                   <p className="border-r-[0.0625em] border-dark-blue text-sm xl:text-base font-normal text-dark-gray-shade font-inter pr-3 pb-0">
                     {item?.by_name_date}
                   </p>
-                </div>
+                </div> */}
                 <div className="font-Inter my-4 [&amp;>a]:bg-dark-pink [&amp;>a]:text-white-color [&amp;>a]:inline-flex [&amp;>a]:text-sm xl:[&amp;>a]:text-base [&amp;>a]:font-medium [&amp;>a]:rounded-[5em] [&amp;>a]:py-[0.6em] md:[&amp;>a]:py-3  [&amp;>a]:px-8 md:[&amp;>a]:mt-[1.2em] hover:[&amp;>a]:bg-dark-blue [&amp;>a]:font-DM ">
                   <p className="text-base md:text-lg font-normal text-dark-blue">
                     {item?.description}
