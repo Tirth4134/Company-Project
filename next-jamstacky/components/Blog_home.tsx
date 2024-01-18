@@ -39,9 +39,9 @@ const Blog_home = async () => {
             <div className="py-8 block md:flex justify-between items-center  md:gap-[1.5rem] gap-0 ">
               <div className="w-full md:w-3/5 max-w-full md:max-w-[40em] z-0">
                 <div>
-                  {/* <h1 className="text-[1.82rem]  md:text-[2.125rem] emd:text-[2.516rem] xl:text-[2.875rem] leading-[1.25em] text-dark-blue mb-2  font-semibold  font-DM">
+                  <h1 className="text-[1.82rem]  md:text-[2.125rem] emd:text-[2.516rem] xl:text-[2.875rem] leading-[1.25em] text-dark-blue mb-2  font-semibold  font-DM">
                     {item?.heading}
-                  </h1> */}
+                  </h1>
                 </div>
                 <div className="flex font-DM">
                   <p className="border-r-[0.0625em] border-dark-blue text-sm xl:text-base font-normal text-dark-gray-shade font-inter pr-3 pb-0">
