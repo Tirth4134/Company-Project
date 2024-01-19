@@ -7,6 +7,13 @@ import Link from "next/link";
 import { useState } from "react";
 
 interface Iheader {
+  
+  
+  
+  
+  
+  
+  
   _id: string;
   title: string;
   logo: string;

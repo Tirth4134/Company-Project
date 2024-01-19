@@ -14,14 +14,14 @@ export default {
       type: 'text',
     },
     {
-      name: 'email',
-      title: 'Email',
-      type: 'string',
-    },
-    {
-      name: 'number',
-      title: 'Number',
-      type: 'string',
+      name: 'email_number',
+      title: 'Email Number',
+      type: 'array',
+      of:[
+        {
+        type:'block'
+      }
+    ]
     },
     {
       name: 'address_time',
@@ -57,8 +57,8 @@ export default {
               ],
             },
             {
-              name: 'connect',
-              title: 'Connect',
+              name: 'contact',
+              title: 'contact',
               type: 'object',
               fields: [
                 {
