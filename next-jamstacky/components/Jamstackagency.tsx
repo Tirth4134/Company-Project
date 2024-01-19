@@ -34,48 +34,45 @@ const Jamstackagency = async () => {
     <div>
       {data.map((item: any) => {
         return (
-          <div className="container">
-           <div className="flex items-start md:items-center justify-center md:justify-between  gap-[2rem]  flex-col sts:flex-row mt-[1rem]  ">
-												<div className="flex items-center md:items-start justify-center   flex-col gap-[1.3rem]  mb-[3rem] w-full sts:w-1/2  sts:max-w-[38rem] mx-auto md:mx-0 ">
-													<h2 className="text-[1.2rem] sm:text-[1.5rem] md:text-[1.559rem] md:text-left text-center  font-[600] text-blue capitalize  leading-[130.9%]  font-dmSans sts:max-w-[32.25rem]">
-														{item.heading}
-													</h2>
-													<div className="[&>ul>li]:text-[0.93538rem] [&>ul>li]:text-[#222549] [&>ul>li]:pb-[1.3rem] [&>ul>li]:font-montserrat [&>ul>li]:leading-[180%] sts:max-w-[36.63625rem] w-full  text-center md:[&>ul>li]:text-left ">
-														<PortableText
-															value={item.description}
-															
-														/>
-													</div>
-													<div className="grid grid-cols-2 m-auto md:mx-0 mb:grid-cols-4 gap-x-[1rem]   gap-y-[2rem] w-fit">
-														{item?.list.map((detail :any) => {
-															return (
-																<div
-																	key={detail._id}
-																	className="flex  flex-col items-center gap-[1rem] justify-start   flex-wrap  "
-																>
-																	<div className="flex items-center justify-center py-[0.4rem] px-[0.5rem] w-[3rem] sm:w-[4.1rem] h-[3rem] sm:h-[4.1rem] bg-whitecolor rounded-[0.5190rem] shadow-whyHireBox   ">
-																		<img
-																			src={urlFor(detail.image).url()}
-																			alt="image"
-																			className="flex items-center justify-center w-[2rem]  sm:w-[3.125rem] h-[2rem]  sm:h-[3.125rem]   bg-[#FFF]"
-																		/>
-																	</div>
-																	<p className="text-[0.8314rem] text-blue text-center font-[600] font-montserrat whitespace-nowrap">
-																		{detail.image_name}
-																	</p>
-																</div>
-															);
-														})}
-													</div>
-												</div>
-												<div className="flex items-center justify-center mx-auto  md:w-[29.57rem] md:max-h-[32rem]">
-													<img
-														src={urlFor(item.traning_image).url()}
-														alt=""
-														className="max-w-[29.257rem] w-full"
-													/>
-												</div>
-											</div>
+          <div className="container ">
+            <div className="flex items-start md:items-center justify-center   gap-[2rem]  flex-col sts:flex-row mt-[1rem] px-10  ">
+              <div className="flex items-center md:items-start justify-center flex-col gap-[1.3rem]  mb-[3rem] w-full sts:w-1/2  sts:max-w-[38rem] mx-auto md:mx-0 ">
+                <h2 className="text-[1.2rem] sm:text-[1.5rem] md:text-[1.559rem] md:text-left text-center  font-[600] text-blue capitalize  leading-[130.9%]  font-dmSans sts:max-w-[32.25rem]">
+                  {item.heading}
+                </h2>
+                <div className="[&>ul>li]:text-[0.93538rem] [&>ul>li]:text-[#222549] [&>ul>li]:pb-[1.3rem] [&>ul>li]:font-montserrat [&>ul>li]:leading-[180%] sts:max-w-[36.63625rem] w-full  text-center md:[&>ul>li]:text-left ">
+                  <PortableText value={item.description} />
+                </div>
+                <div className="grid grid-cols-2 m-auto md:mx-0 mb:grid-cols-4 gap-x-[1rem]   gap-y-[2rem] w-fit">
+                  {item?.list.map((detail: any) => {
+                    return (
+                      <div
+                        key={detail._id}
+                        className="flex  flex-col items-center gap-[1rem] justify-start   flex-wrap  "
+                      >
+                        <div className="flex items-center justify-center py-[0.4rem] px-[0.5rem] w-[3rem] sm:w-[4.1rem] h-[3rem] sm:h-[4.1rem] bg-whitecolor rounded-[0.5190rem] shadow-whyHireBox   ">
+                          <img
+                            src={urlFor(detail.image).url()}
+                            alt="image"
+                            className="flex items-center justify-center w-[2rem]  sm:w-[3.125rem] h-[2rem]  sm:h-[3.125rem]   bg-[#FFF]"
+                          />
+                        </div>
+                        <p className="text-[0.8314rem] text-blue text-center font-[600] font-montserrat whitespace-nowrap">
+                          {detail.image_name}
+                        </p>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+              <div className="flex items-center justify-center mx-auto  md:w-[29.57rem] md:max-h-[32rem]">
+                <img
+                  src={urlFor(item.traning_image).url()}
+                  alt=""
+                  className="max-w-[29.257rem] w-full"
+                />
+              </div>
+            </div>
           </div>
         );
       })}

@@ -73,7 +73,7 @@ const Header = async () => {
                 href={list?.button?.slug.current}
                 className="flex items-center justify-center px-[3.21rem] py-[1.25rem] rounded-[3.5rem] bg-blue hover:bg-buttoncolor duration-500 ml-7 text-[1.125rem] text-center font-[700] leading-[1.25rem] text-whitecolor font-dmSans "
               >
-                {list?.button?.label}
+                ⚡️ {list?.button?.label}
               </Link>
             </nav>
             <HiOutlineMenu

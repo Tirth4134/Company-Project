@@ -20,20 +20,19 @@ async function getHomestaff() {
 
 const Homestaff_images = async () => {
   const data = (await getHomestaff()) as Ihomestaff[];
-  // console.log(data);
 
   return (
-    <div className="flex overflow-x-auto space-x-4 my-2 w-[460px]">
+    <div className="flex overflow-x-auto space-x-4 mx-10">
       {data.map((item) => (
         <div key={item._id} className="slider">
           {item.staff_image.map((img: any, index: number) => (
-            <div key={index} className="inline-block mr-4 slide-track">
+            <div key={index} className="mr-4 w-full">
               <img
                 src={urlFor(img).url()}
-                width={460}
-                height={380}
+                width={500}
+                height={450}
                 alt=""
-                className=""
+                className="w-full"
               />
             </div>
           ))}

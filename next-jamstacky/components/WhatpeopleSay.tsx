@@ -56,7 +56,6 @@ const WhatpeopleSay = async () => {
   return (
     <div className="max-w-[90rem] m-auto px-[1rem] my-[4rem] mb:my-[9rem]">
       {data.map((item) => {
-        // console.log(item);
         return (
           <div
             key={item._id}
@@ -79,16 +78,12 @@ const WhatpeopleSay = async () => {
                   slidesToSlide={1}
                 >
                   {item?.reviews.map((list: any) => {
-                    console.log(list.reviewerImage);
                     return (
                       <div
                         key={list._key}
                         className=" flex flex-col justify-evenly h-full [&>p]:text-[15.75px] [&>p]:lg:text-[1.5rem] [&>p]:text-whitecolor [&>p]:font-[700]  [&>p]:md:max-w-[29.3125rem] [&>p]:text-center [&>p]:mb:text-left "
                       >
-                        <PortableText
-                          value={list.reviewText}
-                          // serializers={richText}
-                        />
+                        <PortableText value={list.reviewText} />
                         <div className="flex items-center justify-center mb:justify-start gap-[1rem]">
                           <img
                             src={urlFor(list.reviewerImage).url()}

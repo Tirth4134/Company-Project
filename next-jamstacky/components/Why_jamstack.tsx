@@ -23,30 +23,26 @@ async function getData() {
 
 const Why_jamstack = async () => {
   const data = (await getData()) as Ijamstack[];
-  //   console.log(data);
 
   return (
     <div>
       {" "}
       {data?.map((item: any) => {
-        // console.log(item?.benifits);
-
         return (
           <>
             {" "}
-            <div className="container">
-              <div className="max-w-[850px] mt-[0] ml-auto em:ml-0 mr-auto text-center em:text-left mb-[30px] md:mb-[50px]">
-                <h5 className="font-medium leading-[1.25em] text-[20px] lg:text-[24px] xl:text-[28px] font-DM text-title-blue-shade">
+            <div className="container px-10">
+              <div className="max-w-[850px] mt-8 ml-5 text-left mb-[30px] md:mb-[50px]">
+                <h5 className="font-medium leading-[1.25em] text-[20px] lg:text-[24px] xl:text-[28px] font-DM text-blue">
                   {item?.heading}
                 </h5>
               </div>
               <div className="max-w-full mt-[2em] sm:mt-[4em] mb-0 mx-auto grid grid-cols-3">
                 {item?.benifits?.map((list: any) => {
-                  // console.log(list?.description);
                   return (
-                    <ul className="flex flex-wrap  items-center justify-between lg:justify-center text-center  px-4 sm:px-8 rounded-[0.625em]  [&amp;>*:nth-child(3)]:after:hidden [&amp;>*:nth-child(4)>div]:mt-0  pt-[0] md:pt-8   pb-8 md:pb-12  mx-auto">
-                      <li className="relative w-full  m-0 pt-0 pb-12 px-0 em:px-4 sm:px-6">
-                        <div className="[&amp;>img]:h-[auto] [&amp;>img]:max-h-[150px] [&amp;>img]:max-w-[150px] [&amp;>img]:w-auto [&amp;>img]:mx-auto">
+                    <ul className="flex flex-wrap  items-center justify-between lg:justify-center text-center sm:px-8 rounded-[0.625em] [&>*:nth-child(3)]:after:hidden [&>*:nth-child(4)>div]:mt-0 md:pt-8 pb-8 md:pb-12  mx-auto">
+                      <li className="relative w-full pb-12 sm:px-6">
+                        <div className="[&>img]:h-[auto] [&>img]:max-h-[150px] [&>img]:max-w-[150px] [&>img]:w-auto [&>img]:mx-auto">
                           <img
                             src={urlFor(list?.image).url()}
                             width={200}
@@ -68,7 +64,6 @@ const Why_jamstack = async () => {
                 })}
               </div>
             </div>
-           
           </>
         );
       })}
