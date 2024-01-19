@@ -22,7 +22,6 @@ export default {
             name:'project_image',
             title:'Project Image',
             type:'image',
-            
         },
         {
             name:'start_project',
