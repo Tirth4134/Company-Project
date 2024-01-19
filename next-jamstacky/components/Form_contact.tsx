@@ -50,10 +50,7 @@ const Form_contact = async () => {
                                     className="w-full sm:w-[80%] py-[0.75em] px-[1em] rounded-lg  pl-[2.75em] border-[1px] border-gray-300"
                                     value="" />
                                     <div>
-                                        {/* <img alt="" loading="lazy" width="10" height="10" decoding="async" data-nimg="1"
-                                        className="w-[14px] h-[14px] absolute top-[14px] xl:top-[18px] left-[15px]"
-                                        style="color:transparent" srcset="/_next/image/?url=%2Fcontact-input-image1.png&amp;w=16&amp;q=75 1x, /_next/image/?url=%2Fcontact-input-image1.png&amp;w=32&amp;q=75 2x"
-                                        src="/_next/image/?url=%2Fcontact-input-image1.png&amp;w=32&amp;q=75"> */}
+                                        <img src='/input logo.webp'  />
                                     </div>
                                 </div>
                             </div>
@@ -65,10 +62,7 @@ const Form_contact = async () => {
                                     <input type="string" id="name" name="name" placeholder="Name" className="w-full sm:w-[80%] py-[0.75em] px-[1em] rounded-lg  pl-[2.75em]   border-[1px] border-gray-300"
                                     value="" />
                                     <div>
-                                        {/* <img alt="" loading="lazy" width="10" height="10" decoding="async" data-nimg="1"
-                                        className="w-[14px] h-[14px] absolute top-[14px] xl:top-[18px] left-[15px]"
-                                        style="color:transparent" srcset="/_next/image/?url=%2Fcontact-input-image1.png&amp;w=16&amp;q=75 1x, /_next/image/?url=%2Fcontact-input-image1.png&amp;w=32&amp;q=75 2x"
-                                        src="/_next/image/?url=%2Fcontact-input-image1.png&amp;w=32&amp;q=75"> */}
+                                    <img src='/input logo.webp'  />
                                     </div>
                                 </div>
                             </div>
