@@ -29,7 +29,6 @@ const Headerjamstack = async () => {
   return (
     <div>
       {data.map((item) => {
-        // item?.jamstack_image);
         return (
           <div
             key={item?._id}
@@ -65,7 +64,7 @@ const Headerjamstack = async () => {
                 </ul>
               </div>
             </div>
-            <div className="w-[70%] em:w-2/4 md:w-2/5 relative z-0 flex justify-end [&amp;>img]:w-full [&amp;>img]:max-w-[30.125em] [&amp;>img]:object-contain [&amp;>img]:h-full ml-auto md:ml-auto mr-auto md:mr-0 mt-12 em:mt-8 md:mt-[0] w-[70%] md:w-[42%] flex justify-end z-0 ">
+            <div className="w-[70%] em:w-2/4 relative z-0 flex justify-end [&>img]:w-full [&>img]:max-w-[30.125em] [&>img]:object-contain [&>img]:h-full ml-auto md:ml-auto mr-auto md:mr-0 mt-12 em:mt-8 md:mt-[0]  md:w-[42%]  ">
               <Image
                 src={item?.jamstack_image}
                 width={700}
