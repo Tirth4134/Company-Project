@@ -49,16 +49,18 @@ const Whatis_jam = async () => {
                 {item?.defination}
               </p>
               <div>{item?.jam_detail?.jam_title}</div>
-              <div className="mt-8 md:mt-16">
+              <div className="mt-8 md:mt-16 grid grid-cols-3 gap-2.5 [&>*:nth-child(1)]:bg-[#00f5c4] [&>*:nth-child(2)]:bg-[#ff871f] [&>*:nth-child(3)]:bg-[#e88da3] [&>*:nth-child(4)]:bg-[#da3654] [&>*:nth-child(4)]:w-[306%] [&>*:nth-child(4)]:justify-center [&>*:nth-child(1)]:rounded-t-2xl [&>*:nth-child(2)]:rounded-t-2xl [&>*:nth-child(3)]:rounded-t-2xl [&>*:nth-child(4)]:rounded-b-2xl [&>*:nth-child(1)]:text-blue [&>*:nth-child(2)]:text-blue [&>*:nth-child(3)]:text-blue  [&>*:nth-child(4)]:text-white [&>*:nth-child(4)]:py-3 [&>*:nth-child(4)]:text-4xl [&>*:nth-child(4)]:font-bold [&>*:nth-child(1)]:text-xl [&>*:nth-child(2)]:text-xl [&>*:nth-child(3)]:text-xl [&>*:nth-child(1)]:px-12 [&>*:nth-child(2)]:px-12 [&>*:nth-child(3)]:px-12 [&>*:nth-child(1)]:pt-4 [&>*:nth-child(2)]:pt-4 [&>*:nth-child(3)]:pt-4 [&>*:nth-child(1)]:h-72 [&>*:nth-child(2)]:h-72 [&>*:nth-child(3)]:h-72">
                 {item?.jam_detail?.map((list: any) => {
-                  //   console.log(list?.jam_title)
                   return (
                     <>
-                      <ul className="mx-auto flex">
-                        <li className=" bg-[#FF871F] w-[30%] border-red-600 border-2 my-2">
-                          <h5>{list?.jam_title}</h5>
-                          <p>{list?.jam_description}</p>
-                          <p></p>
+                      <ul className="flex">
+                        <li className="my-2">
+                          <h5 className="text-center py-4 capitalize">
+                            {list?.jam_title}
+                          </h5>
+                          <p className="text-center text-[#000000b3] font-medium text-sm font-montserrat">
+                            {list?.jam_description}
+                          </p>
                         </li>
                       </ul>
                     </>

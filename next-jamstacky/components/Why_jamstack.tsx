@@ -40,7 +40,7 @@ const Why_jamstack = async () => {
               <div className="max-w-full mt-[2em] sm:mt-[4em] mb-0 mx-auto grid grid-cols-3">
                 {item?.benifits?.map((list: any) => {
                   return (
-                    <ul className="flex flex-wrap  items-center justify-between lg:justify-center text-center sm:px-8 rounded-[0.625em] [&>*:nth-child(3)]:after:hidden [&>*:nth-child(4)>div]:mt-0 md:pt-8 pb-8 md:pb-12  mx-auto">
+                    <ul className="flex items-center justify-between lg:justify-center text-center sm:px-8 rounded-[0.625em] [&>*:nth-child(3)]:after:hidden [&>*:nth-child(4)>div]:mt-0 md:pt-8 pb-8 md:pb-12  mx-auto">
                       <li className="relative w-full pb-12 sm:px-6">
                         <div className="[&>img]:h-[auto] [&>img]:max-h-[150px] [&>img]:max-w-[150px] [&>img]:w-auto [&>img]:mx-auto">
                           <img
