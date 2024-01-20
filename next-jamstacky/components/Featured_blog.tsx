@@ -36,36 +36,35 @@ async function getData() {
 
 const Featured_blog = async () => {
   const data = (await getData()) as Ifeature[];
-  console.log(data);
 
   return (
-    <div>
+    <div className="mb-16">
       {data.map((item: any) => {
-        console.log(item);
         return (
           <div>
-            <div className="block emd:flex justify-between font-DM">
-              <div className="w-full emd:w-[45%] ">
+            <div className="px-10 grid grid-cols-2 font-dmSans">
+              <div className="w-full emd:w-[45%] mt-12">
                 <h3 className=" text-[24px] em:text-[31.5px] xl:text-[36px] text-black-shade-color font-bold mb-2 sm:mb-4 leading-[1.5em] text-left font-DM tracking-[-2px]">
                   {item?.title}
                 </h3>
-                <div className="p-4 em:p-8 border-[1px] border-dark-gray-shade2 [&amp;>img]:w-full [&amp;>a]:w-full">
+                <div className="p-4 em:p-8 border-[1px] border-dark-gray-shade2 [&>img]:w-full [&>a]:w-full">
                   <a
-                    className=""
+                    className="flex items-center justify-center"
                     href="/blog/nextjs-vs-gatsbyjs-key-difference-advantages-disadvantages-limitations/"
                   >
-                    {/* <img alt="hero image" loading="lazy" width="1486" height="900" decoding="async"
-                    data-nimg="1" srcset="https://cdn.sanity.io/images/jaqhm6yh/production/0d6813b7f0106d9bbe3927258cab6623343173e6-1486x900.png?w=1920&amp;q=100&amp;fit=clip&amp;auto=format 1x, https://cdn.sanity.io/images/jaqhm6yh/production/0d6813b7f0106d9bbe3927258cab6623343173e6-1486x900.png?w=3840&amp;q=100&amp;fit=clip&amp;auto=format 2x"
-                    src="https://cdn.sanity.io/images/jaqhm6yh/production/0d6813b7f0106d9bbe3927258cab6623343173e6-1486x900.png?w=3840&amp;q=100&amp;fit=clip&amp;auto=format"
-                    style="color: transparent;"> */}
-                    <img src={urlFor(item?.image).url()} width={400} height={200} alt="image" />
+                    <img
+                      src={urlFor(item?.image).url()}
+                      width={600}
+                      height={400}
+                      alt="image"
+                    />
                   </a>
                   <div className=" flex my-4">
-                    <p className="border-r-[1px] border-dark-gray-shade text-xs em:text-sm font-normal pr-3 font-Inter pb-0">
+                    <p className="border-r-[1px] pl-[2.7rem] border-blue text-base em:text-sm font-normal pr-3 font-dmSans pb-0">
                       {item?.by_name_date}
                     </p>
                   </div>
-                  <div className="">
+                  <div className="pl-[2.7rem]">
                     <a
                       className=""
                       href="/blog/nextjs-vs-gatsbyjs-key-difference-advantages-disadvantages-limitations/"
@@ -74,13 +73,13 @@ const Featured_blog = async () => {
                         {item?.heading}
                       </h4>
                     </a>
-                    <p className="text-sm xl:text-base text-dark-gray-shade font-Inter font-normal pb-4">
+                    <p className="text-sm xl:text-base text-blue font-dmSans opacity-70 font-normal pb-4">
                       {item?.description}
                     </p>
                   </div>
-                  <div className="">
+                  <div className="pl-[2.7rem] pt-5">
                     <Link
-                      className="py-3 px-6 text-[12.25px] xl:text-[14px] font-medium text-white-color hover:text-white-color bg-dark-pink hover:bg-dark-blue  rounded-[3.5em] cursor-pointer "
+                      className="p-4 rounded-2xl text-[12.25px] xl:text-[14px] font-medium text-white bg-pink-600 hover:bg-blue duration-700 cursor-pointer "
                       href={item?.read_more?.slug?.current}
                     >
                       {item?.read_more?.label}
@@ -88,13 +87,14 @@ const Featured_blog = async () => {
                   </div>
                 </div>
               </div>
+              {/* All Posts */}
               <div className="w-full emd:w-1/2 pl-2 mt-8 md:mt-12 emd:mt-0">
                 <div className=" flex items-center justify-between mb-4">
                   <h3 className=" text-[24px] em:text-[31.5px] xl:text-[36px] text-black-shade-color font-bold leading-[1.5em] font-DM">
                     {item?.post_title}
                   </h3>
                   <a
-                    className="text-sm lg:text-base font-normal leading-[28px] text-dark-pink hover:text-dark-blue font-Inter"
+                    className="text-sm lg:text-base font-normal leading-[28px] text-pink-600 hover:text-blue font-dmSans"
                     href="/blog/#all_blogs"
                   >
                     View All
@@ -102,7 +102,6 @@ const Featured_blog = async () => {
                 </div>
                 <div>
                   {item?.post_list.map((list: any) => {
-                    console.log(list?.label);
                     return (
                       <div>
                         <ul className="block ">

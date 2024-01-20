@@ -18,7 +18,6 @@ async function getData() {
 
 const Whychoosejam = async () => {
   const data = (await getData()) as IWhychoose[];
-  console.log(data);
 
   return (
     <div>

@@ -34,13 +34,10 @@ async function getData() {
 
 const Jam_architecture = async () => {
   const data = (await getData()) as Iarchi[];
-  console.log(data);
 
   return (
     <div>
       {data.map((item) => {
-        console.log(item?.reviews_online?.star_image);
-
         return (
           <>
             <div key={item?._id}>

@@ -41,12 +41,12 @@ async function getData() {
 
 const Footer = async () => {
   const data = (await getData()) as Ifooter[];
-  // console.log(data);
+  // 
 
   return (
     <div id="introcall-section">
       {data?.map((item) => {
-        // console.log(item?.footer_button);
+        // item?.footer_button);
 
         return (
           <div key={item?._id} className="bg-whitecolor shadow-footerShadow">

@@ -21,7 +21,7 @@ async function getData(){
 
 const page = async() => {
     const data = (await getData()) as Imetting[];
-  console.log(data);
+  
    
   return (
     <div className='text-center text-2xl '>

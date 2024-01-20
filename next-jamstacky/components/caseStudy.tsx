@@ -38,7 +38,7 @@ async function getData() {
 
 const CaseStudy = async () => {
   const data = (await getData()) as ICaseStudy[];
-  // console.log(data);
+  //
   return (
     <div>
       <div className="container px-10 py-20">

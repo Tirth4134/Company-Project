@@ -23,7 +23,7 @@ async function getData() {
 
 const Who_Renta = async () => {
   const data = (await getData()) as IWho_renta[];
-  console.log(data);
+  
 
   return (
     <div>

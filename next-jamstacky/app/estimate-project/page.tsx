@@ -27,12 +27,12 @@ async function getData() {
 
 const page = async () => {
   const data = (await getData()) as IProject[];
-  console.log(data);
+  
   
   return (
     <div>
       {data.map((item: any) => {
-        console.log(item);    
+        item);    
         return (
           <div>
             

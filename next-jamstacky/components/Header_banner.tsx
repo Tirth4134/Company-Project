@@ -44,7 +44,7 @@ async function getData() {
 
 const Header_banner = async () => {
   const data = (await getData()) as Iheader_bann[];
-  // console.log(data);
+  // 
 
   return (
     <div>

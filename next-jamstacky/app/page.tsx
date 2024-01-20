@@ -10,7 +10,7 @@ import CaseStudy from "@/components/caseStudy";
 // import Jamstack from '.'
 
 export default async function page() {
-  // console.log(projects, "project is here");
+  // projects, "project is here");
 
   return (
     <>

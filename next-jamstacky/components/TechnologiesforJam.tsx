@@ -7,7 +7,7 @@ import React, { useState } from "react";
 interface Itech {
   technologyList: any;
   title: string;
-  label:any;
+  label: any;
 }
 
 async function getList() {
@@ -27,60 +27,43 @@ const TechnologiesforJam = async () => {
   const handlefechlist = (event: any) => {
     setTechType(event.target.value);
   };
-  console.log(techType);
 
   const data = await getList();
-  // console.log(data);
-
   return (
     <div>
       {data.map((item: any) => {
-        console.log(item?.techTypeButton);
-
         return (
-          <div>
-            <div>{item?.title}</div>
-            <div className="flex gap-6">
+          <div className="px-10">
+            <div className="font-medium leading-[2.25rem] text-[20px] lg:text-[24px] xl:text-[28px] font-dmSans text-blue pb-12">
+              {item?.title}
+            </div>
+            <div className="flex em:inline-block my-4 ml-8 em:my-8 mx-auto">
               {item?.techTypeButton.map((btn: any) => {
-                console.log(btn);
                 return (
-                  <li className="w-fit relative text-center md:text-start ">
-                    <label
-                      htmlFor={btn.label}
-                      className="outline-none text-buttoncolor font-[500] border-b-[0.125rem] border-b-transparent hover:border-titlecolor hover:opacity-100 text-[0.875rem]  mb:text-[0.9rem] md:text-[1rem] group-hover:opacity-100
-                                 cursor-pointer        "
-                    >
+                  <li className="list-none mr-4 em:mr-8 text-sm em:text-base sm:text-lg font-medium text-pink-600 pt-[0.7rem] cursor-pointer font-dmSans ">
+                    <label htmlFor={btn.label} className="">
                       {btn.label}
                     </label>
-                    <input
-                      type="text"
-                      id={btn.label}
-                      value={btn.label}
-                      readOnly
-                      onClick={handlefechlist}
-                      className="w-full  focus:border-titlecolor bg-transparent  hidden  "
-                    />
                   </li>
                 );
               })}
             </div>
 
-            <div className="grid grid-cols-8 gap-2">
+            <div className="grid grid-cols-8 items-center ml-6 pt-10">
               {techType === null
                 ? item.technologyList.map((list: any) => {
                     return (
-                      <li
-                        key={list._key}
-                        className="flex items-center justify-center flex-col gap-[0.55rem] mx-[0.25rem]"
-                      >
-                        <img
-                          src={urlFor(list.asset._ref).url()}
-                          alt={list.alt}
-                          className="w-[2.5rem] mb:w-[3rem] md:w-[4.64144rem] h-[2.1rem] mb:h-[3rem] md:h-[4.04144rem]"
-                        />
-                        <p className="text-titlecolor text-[0.75rem] font-[500] font-montserrat text-center ">
-                          {list.title}
-                        </p>
+                      <li key={list._key} className="list-none ml-4">
+                        <div className="p-2 mt-5 w-24 flex flex-col lg:w-28 h-28 items-center justify-center">
+                          <img
+                            src={urlFor(list.asset._ref).url()}
+                            alt={list.alt}
+                            className="w-[3.5rem] h-[4rem] object-contain"
+                          />
+                          <p className="text-center font-medium text-blue pt-4 text-xs sm:text-sm">
+                            {list.title}
+                          </p>
+                        </div>
                       </li>
                     );
                   })
@@ -88,18 +71,13 @@ const TechnologiesforJam = async () => {
                     .filter((list: any) => list.techType == techType.label)
                     .map((list: any) => {
                       return (
-                        <li
-                          key={list._key}
-                          className="flex items-center justify-center flex-col gap-[0.55rem] mx-[0.25rem]"
-                        >
+                        <li key={list._key} className="">
                           <img
                             src={urlFor(list.asset._ref).url()}
                             alt={list.alt}
-                            className=" w-[2rem] h-[2rem]  mb:w-[4.64144rem] mb:h-[4.64144rem]"
+                            className=""
                           />
-                          <p className="text-titlecolor text-[0.75rem] font-[500] font-montserrat text-center ">
-                            {list.title}
-                          </p>
+                          <p className="">{list.title}</p>
                         </li>
                       );
                     })}
@@ -112,4 +90,3 @@ const TechnologiesforJam = async () => {
 };
 
 export default TechnologiesforJam;
-

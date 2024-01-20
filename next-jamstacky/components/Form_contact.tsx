@@ -22,12 +22,11 @@ async function getData() {
 
 const Form_contact = async () => {
   const data = (await getData()) as Iform[];
-  console.log(data);
+  
 
   return (
     <div>
       {data.map((item: any) => {
-        console.log(item);
 
         return (
           <div>

@@ -7,13 +7,13 @@ import { PortableTextBlock } from "sanity";
 interface IHire_jam {
   _id: string;
   title: string;
-  heading:string;
+  heading: string;
   defination: string;
   project_image: string;
   start_project: string;
   hire_jamstack_developer: string;
-  slug:any;
-  label:any;
+  slug: any;
+  label: any;
 }
 
 async function getData() {
@@ -36,11 +36,9 @@ async function getData() {
 }
 const CaseStudies_home = async () => {
   const data = (await getData()) as IHire_jam[];
-  console.log(data);
   return (
     <div>
       {data.map((item) => {
-        console.log(item?.hire_jamstack_developer?.slug.current);
         return (
           <div
             key={item?._id}
@@ -57,7 +55,6 @@ const CaseStudies_home = async () => {
                 <ul className="mt-4 block flex">
                   <li className="secondary [&amp;>a]:bg-dark-blue hover:[&amp;>a]:bg-btn-hover-blue hover:[&amp;>a]:text-white-color [&amp;>a]:text-[15.75px] xl:[&amp;>a]:text-[18px] mr-4 [&amp;>a]:px-[25px] [&amp;>a]:py-[12px] lg:[&amp;>a]:px-[30px] sm:[&amp;>a]:py-[16px] lg:[&amp;>a]:py-[20px] [&amp;>a]:font-bold [&amp;>a]:bg-white-color [&amp;>a]:text-dark-blue">
                     <Link
-                     
                       className="text-[1.125em] font-bold leading-[1.25em] text-white-color bg-pink-700 hover:bg-blue inline-block cursor-pointer px-[1.3em] py-36 lg:px-6 lg:py-4 rounded-[3.5em] font-DM  text-center"
                       href={item?.start_project?.slug.current}
                     >
@@ -66,7 +63,6 @@ const CaseStudies_home = async () => {
                   </li>
                   <li className="secondary [&amp;>a]:bg-dark-blue hover:[&amp;>a]:bg-btn-hover-blue hover:[&amp;>a]:text-white-color [&amp;>a]:text-[15.75px] xl:[&amp;>a]:text-[18px] mr-4 [&amp;>a]:px-[25px] [&amp;>a]:py-[12px] lg:[&amp;>a]:px-[30px] sm:[&amp;>a]:py-[16px] lg:[&amp;>a]:py-[20px] [&amp;>a]:font-bold [&amp;>a]:bg-white-color [&amp;>a]:text-dark-blue">
                     <Link
-                     
                       className="text-[1.125em] font-bold leading-[1.25em] text-white-color bg-pink-700 hover:bg-blue inline-block cursor-pointer px-[1.3em] py-36 lg:px-6 lg:py-4 rounded-[3.5em] font-DM  text-center"
                       href={item?.hire_jamstack_developer?.slug.current}
                     >
@@ -77,8 +73,13 @@ const CaseStudies_home = async () => {
               </div>
             </div>
             <div className="w-[70%] em:w-2/4 md:w-2/5 relative z-0 flex justify-end [&amp;>img]:w-full [&amp;>img]:max-w-[30.125em] [&amp;>img]:object-contain [&amp;>img]:h-full ml-auto md:ml-auto mr-auto md:mr-0 mt-12 em:mt-8 md:mt-[0] w-[70%] md:w-[42%] flex justify-end z-0 ">
-           <Image src={item?.project_image} width={600} height={500} alt="developer" />
-        </div>
+              <Image
+                src={item?.project_image}
+                width={600}
+                height={500}
+                alt="developer"
+              />
+            </div>
           </div>
         );
       })}

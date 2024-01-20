@@ -26,7 +26,6 @@ async function getData() {
 
 const Growth_business = async () => {
   const data = (await getData()) as Ibusiness[];
-  console.log(data);
 
   return (
     <>
@@ -40,7 +39,6 @@ const Growth_business = async () => {
             </div>
             <div>
               {item?.question_list.map((list: any) => {
-                console.log(list);
                 return (
                   <div className="pb-8">
                     <Accordion>

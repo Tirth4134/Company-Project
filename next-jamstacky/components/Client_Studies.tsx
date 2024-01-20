@@ -14,7 +14,7 @@ interface IClient {
   button: string;
   label: any;
   slug: any;
-  time_image:string;
+  time_image: string;
 }
 
 async function getData() {
@@ -30,43 +30,37 @@ async function getData() {
 
 const Client_Studies = async () => {
   const data = (await getData()) as IClient[];
-  console.log(data);
 
   return (
-    <div>
+    <div className="px-10 py-10">
       {data.map((item: any) => {
         return (
           <div key={item?._id}>
-            <div>{item?.heading}</div>
-            <div>
+            <div className="text-blue font-medium font-dmSans text-3xl leading-8 w-[80%]">
+              {item?.heading}
+            </div>
+            <div className="flex pt-16 items-center justify-evenly pb-12">
               {item?.studies_list.map((list: any) => {
-                console.log(list?.button?.label);
-
                 return (
                   <div>
-                    <div>
+                    <div className="flex justify-center items-center">
                       <img
                         src={urlFor(list?.image).url()}
-                        width={200}
-                        height={150}
+                        width={400}
+                        height={325}
                         alt="project-imagex"
                       />
-                    </div>
-                    <div>
-                      <p>{list?.year}</p>
-                      <h2>{list?.title}</h2>
-                      <p>{list?.description}</p>
-                    </div>
-                    <div>
-                      <Link href={list?.button?.slug?.current}>
-                        {list?.button?.label}
-                      </Link>
                     </div>
                   </div>
                 );
               })}
             </div>
-            <img src={urlFor(item?.time_image).url()} />
+            <div className="flex justify-center items-center pt-20">
+              <img
+                src={urlFor(item?.time_image).url()}
+                className="rounded-3xl border border-red-500"
+              />
+            </div>
           </div>
         );
       })}

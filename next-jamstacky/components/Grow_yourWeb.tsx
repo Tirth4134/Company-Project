@@ -28,20 +28,20 @@ const Grow_yourWeb = async () => {
     <div>
       {data.map((item: any) => {
         return (
-          <div>
-            <div className="font-DM [&amp;>p]:pt-4 esm:[&amp;>p]:pt-[0] [&amp;>p]:text-base em:[&amp;>p]:text-lg md:[&amp;>p]:text-xl [&amp;>p]:font-medium [&amp;>p]:text-dark-blue [&amp;>p>span]:font-bold [&amp;>p>span]:text-dark-pink">
-              <h5 className="font-DM flex items-center text-dark-pink [&amp;>img]:max-w-[3em] text-[20px] esm:text-[22px] sm:text-[26px] md:text-[30px] xl:text-[34px] mb-[0.5em]">
+          <div className="px-10 mb-16">
+            <div className="font-dmSans [&>p]:pt-4 esm:[&>p]:pt-[0] [&>p]:text-base em:[&>p]:text-lg md:[&>p]:text-xl [&>p]:font-medium [&>p]:text-blue [&>p]:opacity-75 [&>p>code]:font-bold [&>p>code]:text-pink-600">
+              <h5 className="font-dmSans flex items-center text-pink-700 [&>img]:max-w-[3em] text-[20px] esm:text-[22px] sm:text-[26px] md:text-[30px] xl:text-[34px] mb-[0.5em] ">
                 {item?.title}
-                <div>
-                    <img
-                  src={urlFor(item?.image).url()}
-                  width={100}
-                  height={80}
-                  alt="image"
-                />
+                <div className="[&>img]:rotate-[25deg]">
+                  <img
+                    src={urlFor(item?.image).url()}
+                    width={100}
+                    height={80}
+                    alt="image"
+                  />
                 </div>
               </h5>
-              <p>
+              <p className="">
                 <PortableText value={item?.description} />
               </p>
             </div>

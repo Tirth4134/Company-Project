@@ -36,7 +36,7 @@ async function getData() {
 
 const WhatpeopleSay = async () => {
   const data = (await getData()) as IWhatSay[];
-  // console.log(data);
+  // 
 
   const responsive = {
     desktop: {

@@ -24,24 +24,16 @@ async function getList(): Promise<IWhy[]> {
 
 const Why_hire = async () => {
   const data = (await getList()) as IWhy[];
-  console.log(data);
   return (
-    <div className="my-[3rem] mb:my-[7.5rem] mx-[1rem] relative  ">
+    <div className="my-[3rem] mb:my-[7.5rem] mx-[1rem] relative px-10">
       {data.map((item) => {
         return (
-          <div key={item?._id} className="">
-           
-            {/* <h1 className="after:absolute after:bg-lightblue after:w-[1em] md:after:w-[1.5em] after:h-[0.125em] after:right-[0.5em] after:top-[0.5em] before:absolute before:bg-lightblue before:w-[1em] md:before:w-[1.5em] before:h-[0.125em] before:left-[0.5em] before:top-[0.5em]  leading-[1.25em] uppercase text-lightblue font-[500]  relative inline-block mb-[1em] px-[2em] md:px-[3em] py-0 text-center mb:text-left   text-[1rem] mb:text-[1.375rem]  font-montserrat">
-              {item.heading}
-            </h1> */}
-
-          
-            <h2 className="text-[1.5rem] mb:text-left text-center mb:text-lefet mb:text-[2.15rem] font-[500] text-blue capitalize max-w-[75rem] my-[1rem] font-dmSans">
+          <div key={item?._id}>
+            <h2 className="font-medium leading-[2.25rem] text-[20px] lg:text-[24px] xl:text-[28px] font-dmSans text-blue w-2/3">
               {item.title}
             </h2>
             <ul className="flex flex-col">
-              
-              <div className="my-[1rem] mb:my-[3.5rem] flex items-center md:justify-between  mb:flex-row  flex-col  flex-wrap md:flex-nowrap justify-center  gap-[1rem] mb:gap-[3rem] lg:gap-[9rem]">
+              <div className="my-[1rem] mb:my-[3.5rem] flex items-center md:justify-around  mb:flex-row  flex-col  flex-wrap md:flex-nowrap justify-center gap-[1rem] mb:gap-[3rem] lg:gap-[6rem]">
                 {item.skillList?.map((skill: any) => {
                   return (
                     <li

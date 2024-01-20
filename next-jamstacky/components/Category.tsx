@@ -24,25 +24,25 @@ async function getData() {
 
 const Category = async () => {
   const data = (await getData()) as Icate[];
-  console.log(data);
   return (
     <div>
       {data.map((item: any) => {
         return (
-          <div>
+          <div className="px-10 mt-10">
             <div className=" bg-[#eaf7ff] p-4 em:p-8 mx-0 em:mx-12 sm:mx-20">
-              <h5 className="mb-2 text-center text-pink-700 font-bold block text-[21px] xl:text-[32px] font-DM">
+              <h5 className="mb-2 text-center text-pink-700 font-bold block text-[21px] xl:text-[32px] font-dmSans">
                 {item?.title}
               </h5>
               <div className="grid grid-cols-9">
                 {item?.button.map((btn: any) => {
-                  console.log(btn);
-
                   return (
                     <div>
-                      <ul className="[&amp;>li]:!my-0 grid   [&amp;>li]:my-[0.25em] [&amp;>li]:mx-[0.3em] hover:[&amp;>li>a]:text-dark-pink [&amp;>li>a]:text-gray-light-color [&amp;>li>a]:text-[15px] xl:[&amp;>li>a]:text-[17px] [&amp;>li>a]:font-bold [&amp;>li>a]:inline-block [&amp;>li>a]:p-0 [&amp;>li>a]:m-[0.3em] [&amp;>li>a]:font-DM">
-                        <li className="[&amp;>a]:!text-dark-blue text-sm">
-                          <Link className="" href={btn?.slug?.current}>
+                      <ul className=" grid [&>li]:my-[0.25em] [&>li]:mx-[0.3em] hover:[&>li>a]:text-dark-pink [&>li>a]:text-gray-light-color [&>li>a]:text-[15px] xl:[&>li>a]:text-[17px] [&>li>a]:font-bold [&>li>a]:inline-block [&>li>a]:p-0 [&>li>a]:m-[0.3em] [&>li>a]:font-DM">
+                        <li className="[&>a]:text-blue text-sm text-center [&>a]:opacity-70">
+                          <Link
+                            className="hover:text-pink-600 p-7"
+                            href={btn?.slug?.current}
+                          >
                             {btn?.label}
                           </Link>
                         </li>

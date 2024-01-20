@@ -7,13 +7,6 @@ import Link from "next/link";
 import { useState } from "react";
 
 interface Iheader {
-  
-  
-  
-  
-  
-  
-  
   _id: string;
   title: string;
   logo: string;
@@ -39,15 +32,15 @@ const Header = async () => {
   const handleMenu = () => {
     setShowMenu(!showMen);
   };
-  // console.log(showMen)
+  // showMen)
 
   const data = (await getData()) as Iheader[];
-  // console.log(data);
+  //
 
   return (
     <div className="bg-gradient">
       {data?.map((list) => {
-        // console.log(list)
+        // list)
         return (
           <div
             key={list?._id}

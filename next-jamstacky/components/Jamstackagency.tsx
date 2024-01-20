@@ -29,7 +29,7 @@ async function getData() {
 
 const Jamstackagency = async () => {
   const data = (await getData()) as Iagency[];
-  console.log(data);
+  
   return (
     <div>
       {data.map((item: any) => {

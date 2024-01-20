@@ -34,7 +34,7 @@ const Hometechnology = async () => {
   return (
     <div>
       {data?.map((item) => {
-        // console.log(item?.book_free_consultation_button?.slug.current);
+        // item?.book_free_consultation_button?.slug.current);
         return (
           <div className=" bg-slate-200  pb-12">
             <div>
@@ -56,7 +56,6 @@ const Hometechnology = async () => {
               </div>
               <div className="  ">
                 {item?.image_list?.map((list: any) => {
-                  console.log(list, "images are come");
                   return (
                     <>
                       <div
@@ -68,7 +67,7 @@ const Hometechnology = async () => {
                         </div>
                         <div className="grid grid-cols-4 items-center m-auto gap-3">
                           {list?.technology_images.map((images: any) => {
-                            // console.log(images);
+                            // images);
                             return (
                               <div
                                 key={images?._id}

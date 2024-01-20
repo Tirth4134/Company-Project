@@ -25,11 +25,11 @@ async function getData() {
 }
 const Headerjamstack = async () => {
   const data = (await getData()) as IWhat_jam[];
-  // console.log(data);
+  //
   return (
     <div>
       {data.map((item) => {
-        // console.log(item?.jamstack_image);
+        // item?.jamstack_image);
         return (
           <div
             key={item?._id}
@@ -44,7 +44,7 @@ const Headerjamstack = async () => {
               </p>
               <div>
                 <ul className="mt-7 flex">
-                  <li className="secondary [&amp;>a]:bg-blue hover:[&amp;>a]:bg-btn-hover-blue hover:[&amp;>a]:text-white-color [&amp;>a]:text-[15.75px] xl:[&amp;>a]:text-[18px] mr-4 [&amp;>a]:px-[25px] [&amp;>a]:py-[12px] lg:[&amp;>a]:px-[30px] sm:[&amp;>a]:py-[16px] lg:[&amp;>a]:py-[20px] [&amp;>a]:font-bold [&amp;>a]:bg-white-color [&amp;>a]:text-dark-blue">
+                  <li className="secondary hover:[&amp;>a]:bg-btn-hover-blue hover:[&amp;>a]:text-white-color [&amp;>a]:text-[15.75px] xl:[&amp;>a]:text-[18px] mr-4 [&amp;>a]:px-[25px] [&amp;>a]:py-[12px] lg:[&amp;>a]:px-[30px] sm:[&amp;>a]:py-[16px] lg:[&amp;>a]:py-[20px] [&amp;>a]:font-bold [&amp;>a]:bg-white-color [&amp;>a]:text-dark-blue">
                     <a
                       aria-label="Start Project"
                       className="text-[1.125em] font-bold leading-[1.25em] text-blue bg-white hover:bg-[#21222C] duration-700 hover:text-white inline-block cursor-pointer px-[1.3em] py-36 lg:px-6 lg:py-4 rounded-[3.5em] font-DM  text-center"

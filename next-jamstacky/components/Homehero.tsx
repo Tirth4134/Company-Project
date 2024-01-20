@@ -44,7 +44,7 @@ async function getData() {
 
 const Homehero = async () => {
   const data = (await getData()) as IHomehero[];
-  // console.log(data);
+  // 
   return (
     <div
     // className={clsx(
