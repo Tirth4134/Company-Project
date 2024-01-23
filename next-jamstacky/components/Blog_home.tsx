@@ -52,7 +52,7 @@ const Blog_home = async () => {
                     {item?.description}
                   </p>
                   <Link
-                    className="text-[1.125em] font-bold leading-[1.25rem] text-white bg-pink-600 inline-block cursor-pointer px-[1.3rem] py-36 lg:px-6 lg:py-4 rounded-[3.5rem] font-dmSans text-center"
+                    className="text-[1.125rem] font-bold leading-5 text-white bg-pink-600 inline-block cursor-pointer px-[1.3rem] py-36 lg:px-6 lg:py-4 rounded-[3.5rem] font-dmSans text-center"
                     href={item?.read_more?.slug?.current}
                   >
                     {item?.read_more?.label}
