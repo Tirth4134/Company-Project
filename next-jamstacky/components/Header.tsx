@@ -32,15 +32,12 @@ const Header = async () => {
   const handleMenu = () => {
     setShowMenu(!showMen);
   };
-  // showMen)
 
   const data = (await getData()) as Iheader[];
-  //
 
   return (
     <div className="bg-gradient">
       {data?.map((list) => {
-        // list)
         return (
           <div
             key={list?._id}
@@ -56,7 +53,6 @@ const Header = async () => {
                   height={41}
                 />
               </Link>
-              {/* <h3 className="text-[2.125rem] font-[500] leading-[2.65625rem] text-center text-blue max-w-[11.0625rem] font-dmSans">{data.logo.logo_text}</h3> */}
             </div>
             <nav className="md:flex items-center hidden">
               {list.nav_links.map((item: any) => {

@@ -42,7 +42,7 @@ const Client_Studies = async () => {
             <div className="flex pt-16 items-center justify-evenly pb-12">
               {item?.studies_list.map((list: any) => {
                 return (
-                  <div>
+                  <div key={list?._id}>
                     <div className="flex justify-center items-center">
                       <img
                         src={urlFor(list?.image).url()}

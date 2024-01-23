@@ -41,7 +41,7 @@ const Our_blog = async () => {
           <div>
             {data?.map((item) => {
               return (
-                <div className="px-10 m-auto my-16">
+                <div className="px-10 m-auto my-16" key={item?._id}>
                   <div className="max-w-[850px]  em:text-left mb-[10px] ">
                     <p className="font-medium leading-[1.25em] text-[20px] lg:text-[24px] xl:text-[28px] font-DM text-title-blue-shade pb-10">
                       {item?.heading}
@@ -50,7 +50,7 @@ const Our_blog = async () => {
                   <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] lg:grid-cols-[1fr_1fr_1fr] gap-x-[2em] gap-y-[1.875em] items-center">
                     {item?.blog.map((list: any) => {
                       return (
-                        <div className="">
+                        <div className="" key={list?._id}>
                           <img
                             src={urlFor(list?.blog_image).url()}
                             alt="dlkjf"
@@ -61,6 +61,7 @@ const Our_blog = async () => {
                             {list?.blog_button.map((btn: any) => {
                               return (
                                 <Link
+                                  key={btn?._id}
                                   href={btn?.slug?.current}
                                   className="mx-3 bg-[#F4FBFF] rounded-lg p-1"
                                 >

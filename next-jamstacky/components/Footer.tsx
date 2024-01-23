@@ -46,8 +46,6 @@ const Footer = async () => {
   return (
     <div id="introcall-section">
       {data?.map((item) => {
-        // item?.footer_button);
-
         return (
           <div key={item?._id} className="bg-whitecolor shadow-footerShadow">
             {/* top section */}

@@ -27,7 +27,7 @@ const Form_contact = async () => {
     <div>
       {data.map((item: any) => {
         return (
-          <div className="px-10">
+          <div className="px-10" key={item?._id}>
             <div className="container">
               <div className="contactus-form-inner bg-blue rounded-lg px-[1.5em] sm:px-[2.5em] pt-[1.5em] sm:pt-[2.5em] pb-[4em] sm:pb-[5em]">
                 <div className="mb-[2.5em] max-w-full em:max-w-[75%] [&>h3]:mb-[0] text-white [&>h3]:text-left [&>h3]:font-medium [&>h3]:text-[21px] xl:[&>h3]:text-2xl [&>p]:text-white  [&>p]:opacity-70 [&>p]:text-sm xl:[&>p]:text-base [&>p]:mt-[0.97em]  [&>p]:text-left">

@@ -7,11 +7,8 @@ import Our_blog from "@/components/Our_blog";
 import TechnologiesforJam from "@/components/TechnologiesforJam";
 import WhatpeopleSay from "@/components/WhatpeopleSay";
 import CaseStudy from "@/components/caseStudy";
-// import Jamstack from '.'
 
 export default async function page() {
-  // projects, "project is here");
-
   return (
     <>
       <Homehero />

@@ -44,7 +44,7 @@ const HowodoesItWork = async () => {
               <ul className="flex items-center justify-evenly gap-10 pt-8">
                 {item?.images?.map((image: any) => {
                   return (
-                    <div key={image._key}>
+                    <div key={image._id}>
                       <img
                         src={urlFor(image?.asset._ref).url()}
                         width={200}

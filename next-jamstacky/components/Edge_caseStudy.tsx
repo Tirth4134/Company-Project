@@ -43,7 +43,7 @@ const Edge_caseStudy = async () => {
         <div className="container px-10 pt-12">
           {data?.map((item) => {
             return (
-              <div className="edge-casestudy-inner">
+              <div className="edge-casestudy-inner" key={item?._id}>
                 <div className="section-header">
                   <div className="max-w-[850px] em:ml-0 mr-auto em:text-left md:mb-[50px] ">
                     <p className="font-medium leading-[1.25em] text-[20px] lg:text-[24px] xl:text-[28px] font-DM text-blue">

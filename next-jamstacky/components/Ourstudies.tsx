@@ -32,14 +32,17 @@ const Ourstudies = async () => {
     <div>
       {data.map((item) => {
         return (
-          <div className="px-10  py-10">
+          <div className="px-10  py-10" key={item?._id}>
             <h5 className="font-medium leading-[2.25rem] py-12 text-[20px] lg:text-[24px] xl:text-[28px] font-dmSans text-blue">
               {item?.title}
             </h5>
             <div className="grid grid-cols-2 gap-8">
               {item?.case_studies_list?.map((list: any) => {
                 return (
-                  <div className="w-full bg-gradient rounded-2xl shadow-xl p-6 text-center">
+                  <div
+                    className="w-full bg-gradient rounded-2xl shadow-xl p-6 text-center"
+                    key={list?._id}
+                  >
                     <div className="flex items-center justify-center">
                       <img
                         src={urlFor(list?.image).url()}

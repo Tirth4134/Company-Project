@@ -33,7 +33,7 @@ const Case_hireDeveloper = async () => {
     <div>
       {data.map((item: any) => {
         return (
-          <div className="px-10 py-20 flex justify-center">
+          <div className="px-10 py-20 flex justify-center" key={item?._id}>
             <div className="w-2/3">
               <h5 className="capitalize font-dmSans mb-2 leading-tight font-medium text-blue text-[1.625rem] md:text-[2.1875em] xl:!text-[2.125rem]">
                 {item?.heading}

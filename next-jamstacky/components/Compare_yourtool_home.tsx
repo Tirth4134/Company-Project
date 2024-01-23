@@ -29,7 +29,7 @@ const Compare_yourtool_home = async () => {
     <div>
       {data.map((item) => {
         return (
-          <div className="my-24">
+          <div className="my-24" key={item?._id}>
             <div className="max-w-[1220px] mx-auto py-[2em] md:py-[2.6875em] px-[2em] md:px-[3.5em] rounded-[0.625em] block md:flex justify-between align-center em:text-left items-center secondary bg-darkgradient ">
               <div className="[&>div>h5]:text-white [&>div>h5]:text-center em:[&>div>h5]:text-left [&>h5]:text-[19px] sm:[&:h5]:text-[21px] xl:[&>h5]:text-[24px]  [&>p]:font-DM  [&>p]:text-white-color [&>p]:text-sm xl:[&>p]:text-base [&>p]:text-center em:[&>p]:text-left [&>a]:rounded-[3em] [&>a]:text-sm xl:[&>a]:text-base [&>a]:font-semibold hover:[&>a]:bg-white hover:[&>a]:text-blue [&>a]:shadow-hire-btn [&>a]:py-4 esm:[&>a]:py-[1.125em] [&>a]:px-4 lsm:[&>a]:px-[1.8em] esm:[&>a]:px-10 w-full md:w-3/4 xl:pr-10  ">
                 <h5 className="capitalize font-dmSans mb-2 text-white !text-[2.2640625em] sm:!text-[2.515625em] xl:!text-[2.875em] font-bold leading-tight">

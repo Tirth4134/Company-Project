@@ -33,14 +33,17 @@ const TechnologiesforJam = async () => {
     <div>
       {data.map((item: any) => {
         return (
-          <div className="px-10">
+          <div className="px-10" key={item?._id}>
             <div className="font-medium leading-[2.25rem] text-[20px] lg:text-[24px] xl:text-[28px] font-dmSans text-blue pb-12">
               {item?.title}
             </div>
             <div className="flex em:inline-block my-4 ml-8 em:my-8 mx-auto">
               {item?.techTypeButton.map((btn: any) => {
                 return (
-                  <li className="list-none mr-4 em:mr-8 text-sm em:text-base sm:text-lg font-medium text-pink-600 pt-[0.7rem] cursor-pointer font-dmSans ">
+                  <li
+                    className="list-none mr-4 em:mr-8 text-sm em:text-base sm:text-lg font-medium text-pink-600 pt-[0.7rem] cursor-pointer font-dmSans"
+                    key={btn?._id}
+                  >
                     <label htmlFor={btn.label} className="">
                       {btn.label}
                     </label>

@@ -49,7 +49,7 @@ const OurProcess = async () => {
                     listNum = `${i + 1}`;
                   }
                   return (
-                    <div>
+                    <div key={list._key}>
                       <div
                         key={list._key}
                         className=" flex  items-center  flex-col gap-[0.9rem] after:overflow-hidden  "

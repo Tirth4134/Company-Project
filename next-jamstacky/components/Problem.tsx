@@ -28,7 +28,7 @@ const Problem = async () => {
     <div>
       {data.map((item) => {
         return (
-          <div className="pb-24">
+          <div className="pb-24" key={item?._id}>
             <div className="max-w-[850px] mt-20 px-10 pl-7  ">
               <div>
                 <p className="font-medium leading-[1.25rem] uppercase text-lightblue tracking-wider inline-block mb-[1rem] px-[2rem] md:px-[3rem] py-0 text-[14.175px] sm:text-[15.75px] xl:text-[18px] font-dmSans">

@@ -48,7 +48,7 @@ const Homehero = async () => {
     <div>
       {data?.map((item) => {
         return (
-          <div className="container bg-gradient">
+          <div className="container bg-gradient" key={item?._id}>
             <div className="flex justify-between items-center pt-[8em] sm:pt-[10em] pb-0 px-10">
               <div className="w-full lg:w-[60%]">
                 <div className="relative banner-text-content">

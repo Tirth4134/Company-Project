@@ -28,7 +28,7 @@ const Grow_yourWeb = async () => {
     <div>
       {data.map((item: any) => {
         return (
-          <div className="px-10 mb-16">
+          <div className="px-10 mb-16" key={item?._id}>
             <div className="font-dmSans [&>p]:pt-4 esm:[&>p]:pt-[0] [&>p]:text-base em:[&>p]:text-lg md:[&>p]:text-xl [&>p]:font-medium [&>p]:text-blue [&>p]:opacity-75 [&>p>code]:font-bold [&>p>code]:text-pink-600">
               <h5 className="font-dmSans flex items-center text-pink-700 [&>img]:max-w-[3em] text-[20px] esm:text-[22px] sm:text-[26px] md:text-[30px] xl:text-[34px] mb-[0.5em] ">
                 {item?.title}

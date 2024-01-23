@@ -43,7 +43,7 @@ const LetsChat_home = async () => {
     <div>
       {data.map((item: any) => {
         return (
-          <div className="px-10 pb-24">
+          <div className="px-10 pb-24" key={item?._id}>
             <div className="pt-12 pb-11">
               <h1 className="text-[4.5rem] sm:text-[5.875rem] pt-16 lg:text-[6.5625rem] xl:text-[7.5rem] text-black  font-extrabold tracking-wide leading-tight">
                 {item?.title}

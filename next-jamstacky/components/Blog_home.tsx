@@ -34,7 +34,7 @@ const Blog_home = async () => {
     <div>
       {data.map((item: any) => {
         return (
-          <div>
+          <div key={item?._id}>
             <div className="py-8 px-10 block md:flex justify-between items-center bg-gradient md:gap-[1.5rem] gap-0 ">
               <div className="w-full md:w-3/5 max-w-full md:max-w-[40rem] z-0">
                 <div>

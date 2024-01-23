@@ -30,7 +30,7 @@ const FAQsection = async () => {
     <>
       {data.map((item: any) => {
         return (
-          <div className="px-10 pb-16">
+          <div className="px-10 pb-16" key={item?._id}>
             <div key={item?._id}>
               <h1 className="text-red-600 max-w-full sm:max-w-[70%] mx-auto mb-2 md:mb-[0.7em] xl:mb-[1.5em] text-center text-[20px] em:text-[22px] md:text-[26px] xl:text-[30px] font-medium font-DM">
                 {item?.title}
@@ -38,9 +38,8 @@ const FAQsection = async () => {
             </div>
             <div>
               {item?.question_list.map((list: any) => {
-                console.log(list);
                 return (
-                  <div>
+                  <div key={list?._id}>
                     <Accordion>
                       <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}

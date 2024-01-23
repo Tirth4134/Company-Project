@@ -36,7 +36,7 @@ const Hometechnology = async () => {
       {data?.map((item) => {
         // item?.book_free_consultation_button?.slug.current);
         return (
-          <div className=" bg-slate-200  pb-12">
+          <div className=" bg-gradient  pb-12" key={item?._id}>
             <div>
               <div className=" block sm:flex justify-around gap-20 font-DM  pt-16 items-center pb-12">
                 <div
@@ -45,7 +45,7 @@ const Hometechnology = async () => {
                 >
                   {item?.title}
                 </div>
-                <div className=" text-[1em] font-bold leading-[1em] text-white-color bg-pink-600 hover:bg-blue duration-700 inline-block cursor-pointer px-[1em] py-30 lg:px-6 lg:py-4 rounded-[3.5em] font-DM text-centerconsultation-btn [&amp;>a]:px-[20px] em:[&amp;>a]:px-[26px] md:[&amp;>a]:px-[34px] [&amp;>a]:py-[14px] em:[&amp;>a]:py-[18px] md:[&amp;>a]:py-[20px] text-center sm:text-right mt-[1.5em] sm:mt-[0] [&amp;>a]:font-bold [&amp;>a]:leading-[20px] [&amp;>a]:text-white-color [&amp;>a]:bg-dark-pink [&amp;>a]:inline-block [&amp;>a]:cursor-pointer [&amp;>a]:rounded-[3.5em] [&amp;>a]:hover:text-white-color hover:[&amp;>a]:bg-dark-blue [&amp;>a]:text-[14.175px] sm:[&amp;>a]:text-[15.75px] xl:[&amp;>a]:text-[18px] ">
+                <div className=" text-[1em] font-bold leading-[1em] text-white-color bg-pink-600 hover:bg-blue duration-700 inline-block cursor-pointer px-[1em] py-30 lg:px-6 lg:py-4 rounded-[3.5em] font-DM text-centerconsultation-btn [&>a]:px-[20px] em:[&>a]:px-[26px] md:[&>a]:px-[34px] [&>a]:py-[14px] em:[&>a]:py-[18px] md:[&>a]:py-[20px] text-center sm:text-right mt-[1.5em] sm:mt-[0] [&>a]:font-bold [&>a]:leading-[20px] [&>a]:text-white-color [&>a]:bg-dark-pink [&>a]:inline-block [&>a]:cursor-pointer [&>a]:rounded-[3.5em] [&>a]:hover:text-white-color hover:[&>a]:bg-dark-blue [&>a]:text-[14.175px] sm:[&>a]:text-[15.75px] xl:[&>a]:text-[18px] ">
                   <Link
                     href={item?.book_free_consultation_button?.slug.current}
                     className="text-[1.125em] font-bold leading-[1.25em] text-white bg-dark-pink hover:bg-dark-blue inline-block cursor-pointer px-[1.3em] py-36 lg:px-6 lg:py-4 rounded-[3.5em] font-DM text-center"
@@ -54,7 +54,7 @@ const Hometechnology = async () => {
                   </Link>
                 </div>
               </div>
-              <div className="  ">
+              <div className=" ">
                 {item?.image_list?.map((list: any) => {
                   return (
                     <>
@@ -67,7 +67,6 @@ const Hometechnology = async () => {
                         </div>
                         <div className="grid grid-cols-4 items-center m-auto gap-3">
                           {list?.technology_images.map((images: any) => {
-                            // images);
                             return (
                               <div
                                 key={images?._id}

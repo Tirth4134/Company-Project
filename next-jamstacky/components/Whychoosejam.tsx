@@ -27,9 +27,6 @@ const Whychoosejam = async () => {
             key={item._id}
             className="max-w-[76rem] m-auto flex flex-col items-center md:items-start"
           >
-            {/* <h4 className="after:absolute after:bg-lightblue after:w-[1em] md:after:w-[1.5em] after:h-[0.125em] after:right-[0.5em] after:top-[0.5em] before:absolute before:bg-lightblue before:w-[1em] md:before:w-[1.5em] before:h-[0.125em] before:left-[0.5em] before:top-[0.5em] font-medium leading-[1.25em] uppercase text-lightblue  tracking-wider relative inline-block px-[2em] md:px-[3em] py-0 text-[14.175px] sm:text-[15.75px] xl:text-[18px] font-dmSans">
-									{item.heading}
-								</h4> */}
             <h2 className="text-[1.2rem] sm:text-[1.5rem] md:text-[2.15rem] md:text-left text-center  font-[500] text-blue capitalize max-w-[75rem] my-[1rem] font-dmSans">
               {item.title}
             </h2>

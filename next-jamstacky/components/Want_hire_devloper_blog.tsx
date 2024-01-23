@@ -33,7 +33,7 @@ const Want_hire_devloper_blog = async () => {
     <div className="">
       {data.map((item: any) => {
         return (
-          <div>
+          <div key={item?._id}>
             <div className=" text-white max-w-[1220px] mx-auto py-[2em] md:py-[2.6875em] px-[2em] md:px-[3.5em] rounded-[0.625em] block md:flex justify-between align-center  em:text-left items-center secondary bg-darkgradient">
               <div className="[&>div>h5]:text-white [&>div>h5]:text-center em:[&>div>h5]:text-left [&>h5]:text-[19px] sm:[&:h5]:text-[21px] xl:[&>h5]:text-[24px]  [&>p]:font-DM  [&>p]:text-white-color [&>p]:text-sm xl:[&>p]:text-base [&>p]:text-center em:[&>p]:text-left [&>a]:rounded-[3em] [&>a]:text-sm xl:[&>a]:text-base [&>a]:font-semibold hover:[&>a]:bg-white-color hover:[&>a]:text-dark-blue [&>a]:shadow-hire-btn [&>a]:py-4 esm:[&>a]:py-[1.125em] [&>a]:px-4 lsm:[&>a]:px-[1.8em] esm:[&>a]:px-10 w-full md:w-3/4 xl:pr-10 ">
                 <h5 className="capitalize font-dmSans !text-[1.875em] mb-2 leading-tight font-medium text-white-color sm:!text-[2.515625em] xl:!text-[2.875em]">

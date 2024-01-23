@@ -29,12 +29,12 @@ async function getData() {
 
 const Jamstackagency = async () => {
   const data = (await getData()) as Iagency[];
-  
+
   return (
     <div>
       {data.map((item: any) => {
         return (
-          <div className="container px-10">
+          <div className="container px-10" key={item?._id}>
             <div className="flex items-start md:items-center justify-center   gap-[2rem] mt-[1rem] px-10  ">
               <div className="flex items-center md:items-start justify-center flex-col gap-[1.3rem]  mb-[3rem] w-2/4 sts:w-1/2  sts:max-w-[38rem] mx-auto md:mx-0 ">
                 <h2 className="text-[1.2rem] sm:text-[1.5rem] md:text-[1.559rem] md:text-left text-center  font-[600] text-blue capitalize  leading-[130.9%]  font-dmSans sts:max-w-[32.25rem]">

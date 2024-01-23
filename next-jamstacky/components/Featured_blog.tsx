@@ -41,7 +41,7 @@ const Featured_blog = async () => {
     <div className="mb-16">
       {data.map((item: any) => {
         return (
-          <div>
+          <div key={item?._id}>
             <div className="px-10 grid grid-cols-2 font-dmSans">
               <div className="w-full emd:w-[45%] mt-12">
                 <h3 className=" text-[24px] em:text-[31.5px] xl:text-[36px] text-black-shade-color font-bold mb-2 sm:mb-4 leading-[1.5em] text-left font-DM tracking-[-2px]">
@@ -103,7 +103,7 @@ const Featured_blog = async () => {
                 <div>
                   {item?.post_list.map((list: any) => {
                     return (
-                      <div>
+                      <div key={list?._id}>
                         <ul className="block ">
                           <li className="p-4 lg:p-8 pl-2 emd:pl-8 bg-[#0000]  hover:bg-[#eaf7ff]">
                             <Link className="" href={list?.slug.current}>
