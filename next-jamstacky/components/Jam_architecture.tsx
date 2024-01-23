@@ -7,7 +7,7 @@ import React from "react";
 import { PortableTextBlock } from "sanity";
 
 interface Iarchi {
-  _id: string;
+  _id: any;
   title: string;
   image: string;
   description: PortableTextBlock[];

@@ -5,7 +5,7 @@ import Link from "next/link";
 import React from "react";
 
 interface Iheader_bann {
-  _id: string;
+  _id: any;
   hire_name: string;
   hire_image: string;
   email: string;
@@ -44,7 +44,7 @@ async function getData() {
 
 const Header_banner = async () => {
   const data = (await getData()) as Iheader_bann[];
-  // 
+  //
 
   return (
     <div>

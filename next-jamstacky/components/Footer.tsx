@@ -7,7 +7,7 @@ import Link from "next/link";
 import { PortableTextBlock } from "sanity";
 
 interface Ifooter {
-  _id: string;
+  _id: any;
   footer_text: any;
   footer_image: string;
   footer_button: string;

@@ -8,6 +8,7 @@ interface Itech {
   technologyList: any;
   title: string;
   label: any;
+  _id: any;
 }
 
 async function getList() {

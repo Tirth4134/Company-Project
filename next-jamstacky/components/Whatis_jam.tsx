@@ -5,11 +5,11 @@ import React from "react";
 import { PortableTextBlock } from "sanity";
 
 interface Ijam {
-  _id: "string";
-  title: "string";
+  _id: any;
+  title: string;
   description: PortableTextBlock[];
-  defination: "string";
-  path_image: "string";
+  defination: string;
+  path_image: string;
   jam_detail: any;
 }
 

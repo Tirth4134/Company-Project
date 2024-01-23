@@ -6,7 +6,7 @@ import React from "react";
 import { PortableTextBlock } from "sanity";
 
 interface Iwant_hire {
-  _id: string;
+  _id: any;
   heading: string;
   description: PortableTextBlock[];
   book_free_conclutation: string;

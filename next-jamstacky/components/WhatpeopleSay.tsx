@@ -11,7 +11,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 interface IWhatSay {
-  _id: string;
+  _id: any;
   testinomialSec: PortableTextBlock[];
   reviewText: string;
   reviewerName: string;

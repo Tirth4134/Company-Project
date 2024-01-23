@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useClient } from "sanity";
 
 interface IHomehero {
-  _id: string;
+  _id: any;
   title: string;
   hero_image: string;
   hero_title: string;

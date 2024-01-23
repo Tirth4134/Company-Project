@@ -6,7 +6,7 @@ import { PortableTextBlock } from "sanity";
 import { PortableText } from "@portabletext/react";
 
 interface ICaseStudy {
-  _id: string;
+  _id: any;
   heading: string;
   core_web_title: string;
   volz_blog_title: PortableTextBlock[];

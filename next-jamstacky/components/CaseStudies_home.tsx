@@ -5,7 +5,7 @@ import React from "react";
 import { PortableTextBlock } from "sanity";
 
 interface IHire_jam {
-  _id: string;
+  _id: any;
   title: string;
   heading: string;
   defination: string;

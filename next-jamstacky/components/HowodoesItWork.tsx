@@ -3,7 +3,7 @@ import { urlFor } from "@/imageBuilder/urlFor";
 import React from "react";
 
 interface IhowIt {
-  _id: string;
+  _id: any;
   heading: string;
   title: string;
   images: any;

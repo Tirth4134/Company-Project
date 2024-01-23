@@ -4,7 +4,7 @@ import { PortableTextBlock } from "sanity";
 import { PortableText } from "@portabletext/react";
 
 interface IPrivacy {
-    _id: string;
+    _id: any;
     update: string;
     heading: string;
     description:PortableTextBlock[];

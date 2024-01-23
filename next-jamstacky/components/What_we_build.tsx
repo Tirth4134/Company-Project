@@ -5,7 +5,7 @@ import React from "react";
 import { PortableTextBlock } from "sanity";
 
 interface IWhat_build {
-  _id: string;
+  _id: any;
   title: string;
   building_detail: any;
   description: PortableTextBlock[];

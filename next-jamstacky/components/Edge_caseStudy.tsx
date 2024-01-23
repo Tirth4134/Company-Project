@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface Iedge {
-  _id: string;
+  _id: any;
   edge_heading: string;
   circle_image: string;
   edge_blog: PortableTextBlock[];

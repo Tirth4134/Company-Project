@@ -6,7 +6,7 @@ import Link from "next/link";
 import { urlFor } from "@/imageBuilder/urlFor";
 
 interface Icontact {
-  _id: string;
+  _id: any;
   title: string;
   description: string;
   email_number: PortableTextBlock[];

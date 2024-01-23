@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 interface IProject {
-  _id: string;
+  _id: any;
   title: string;
   heading: string;
   button: string;

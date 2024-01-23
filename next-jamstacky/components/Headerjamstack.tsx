@@ -4,7 +4,7 @@ import React from "react";
 import { PortableTextBlock } from "sanity";
 
 interface IWhat_jam {
-  _id: string;
+  _id: any;
   title: string;
   defination: string;
   jamstack_image: string;

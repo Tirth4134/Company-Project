@@ -5,7 +5,7 @@ import React from "react";
 import { PortableTextBlock } from "sanity";
 
 interface Icase_home {
-  _id: string;
+  _id: any;
   title: string;
   heading: string;
   defination: string;

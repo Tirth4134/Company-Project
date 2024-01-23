@@ -3,7 +3,7 @@ import { urlFor } from "@/imageBuilder/urlFor";
 import React from "react";
 
 interface IOurPro {
-  _id: string;
+  _id: any;
   heading: string;
   title: string;
   processTrack: any;

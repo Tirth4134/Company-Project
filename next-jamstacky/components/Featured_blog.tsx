@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 interface Ifeature {
-  _id: string;
+  _id: any;
   title: string;
   heading: string;
   by_name_date: string;

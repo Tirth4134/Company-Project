@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 interface Icate {
-  _id: string;
+  _id: any;
   title: string;
 
   button: any;

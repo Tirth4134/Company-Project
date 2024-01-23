@@ -6,7 +6,7 @@ import React from "react";
 import { PortableTextBlock } from "sanity";
 
 interface IDeveloper {
-  _id: string;
+  _id: any;
   heading: string;
   description: PortableTextBlock[];
   button: string;

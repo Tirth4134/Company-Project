@@ -6,7 +6,7 @@ import React from "react";
 import { PortableTextBlock } from "sanity";
 
 interface Istudies {
-  _id: string;
+  _id: any;
   title: string;
   case_studies_list: any;
   image: string;

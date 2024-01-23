@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 interface IClient {
-  _id: string;
+  _id: any;
   heading: string;
   studies_list: any;
   image: string;

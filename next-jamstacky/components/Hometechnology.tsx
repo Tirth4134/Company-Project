@@ -5,7 +5,7 @@ import Link from "next/link";
 import React from "react";
 
 interface ITechnology {
-  _id: string;
+  _id: any;
   title: string;
   book_free_consultation_button: string;
   technology_heading: string;

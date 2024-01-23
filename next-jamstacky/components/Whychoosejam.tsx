@@ -5,7 +5,7 @@ import React from "react";
 interface IWhychoose {
   title: string;
   toolsList: any;
-  _id: string;
+  _id: any;
 }
 
 async function getData() {

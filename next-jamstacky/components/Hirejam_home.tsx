@@ -5,7 +5,7 @@ import React from "react";
 import { PortableTextBlock } from "sanity";
 
 interface IHire_jam {
-  _id: string;
+  _id: any;
   title: string;
   defination: string;
   hireremote_image: string;
@@ -34,7 +34,7 @@ async function getData() {
 }
 const Hirejam_home = async () => {
   const data = (await getData()) as IHire_jam[];
-  
+
   return (
     <div>
       {data.map((item) => {

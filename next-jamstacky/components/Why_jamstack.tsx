@@ -3,7 +3,7 @@ import { urlFor } from "@/imageBuilder/urlFor";
 import React from "react";
 
 interface Ijamstack {
-  _id: string;
+  _id: any;
   heading: string;
   benifits: any;
   image: string;

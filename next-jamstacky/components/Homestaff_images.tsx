@@ -3,7 +3,7 @@ import { urlFor } from "@/imageBuilder/urlFor";
 // import { list } from "postcss";
 
 interface Ihomestaff {
-  _id: string;
+  _id: any;
   staff_image: any;
   images: string;
 }

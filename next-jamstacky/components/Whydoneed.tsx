@@ -5,7 +5,7 @@ import React from "react";
 import { PortableTextBlock } from "sanity";
 
 interface IWhyneed {
-  _id: string;
+  _id: any;
   heading: string;
   image: any;
   jamstack_detail: any;

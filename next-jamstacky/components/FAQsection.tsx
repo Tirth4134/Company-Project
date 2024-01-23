@@ -7,7 +7,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import React from "react";
 
 interface IFAQ_hire {
-  _id: string;
+  _id: any;
   title: string;
   question_list: any;
   question: string;

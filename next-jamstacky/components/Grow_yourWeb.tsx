@@ -5,7 +5,7 @@ import React from "react";
 import { PortableTextBlock } from "sanity";
 
 interface Icompare {
-  _id: string;
+  _id: any;
   title: string;
   description: PortableTextBlock[];
   image: string;

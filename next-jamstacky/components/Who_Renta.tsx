@@ -5,7 +5,7 @@ import React from "react";
 import { PortableTextBlock } from "sanity";
 
 interface IWho_renta {
-  _id: string;
+  _id: any;
   title: string;
   description: PortableTextBlock[];
   image: string;

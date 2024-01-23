@@ -7,7 +7,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
 interface Ibusiness {
-  _id: string;
+  _id: any;
   title: string;
   question_list: any;
   question: string;

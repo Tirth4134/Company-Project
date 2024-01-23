@@ -6,7 +6,7 @@ import React from "react";
 import { PortableTextBlock } from "sanity";
 
 interface Iour_blog {
-  _id: string;
+  _id: any;
   heading: string;
   blog: any;
   blog_list: string;

@@ -5,7 +5,7 @@ import React from "react";
 import { PortableTextBlock } from "sanity";
 
 interface Iagency {
-  _id: string;
+  _id: any;
   heading: string;
   description: PortableTextBlock[];
   traning_image: string;

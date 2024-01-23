@@ -5,7 +5,7 @@ import { PortableText } from "@portabletext/react";
 import { urlFor } from "@/imageBuilder/urlFor";
 
 interface Iform {
-  _id: string;
+  _id: any;
   send_message: PortableTextBlock[];
   image: string;
 }
