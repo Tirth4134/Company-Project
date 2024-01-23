@@ -23,30 +23,30 @@ async function getData() {
 
 const Who_Renta = async () => {
   const data = (await getData()) as IWho_renta[];
-  
 
   return (
     <div>
       {data.map((item: any) => {
         return (
           <div key={item?._id}>
-            <div className="max-w-[850px] mt-[0] ml-auto em:ml-0 mr-auto text-center em:text-left mb-[30px] md:mb-[50px]">
+            <div className="max-w-[850px] mt-[0] pl-7 pt-20">
               <div>
-                <p className="after:absolute after:bg-light-blue after:w-[1em] md:after:w-[1.5em] after:h-[0.125em] after:right-[0.5em] after:top-[0.5em] before:absolute before:bg-light-blue before:w-[1em] md:before:w-[1.5em] before:h-[0.125em] before:left-[0.5em] before:top-[0.5em] font-medium leading-[1.25em] uppercase text-light-blue  tracking-wider relative inline-block mb-[1em] px-[2em] md:px-[3em] py-0 text-[14.175px] sm:text-[15.75px] xl:text-[18px] font-DM">
-                  {item?.title}
+                <p className="font-medium leading-[1.25rem] uppercase text-lightblue tracking-wider inline-block mb-[1rem] px-[2rem] md:px-[3rem] py-0 text-[14.175px] sm:text-[15.75px] xl:text-[18px] font-dmSans">
+                  - {item?.title} -
                 </p>
               </div>
             </div>
-            <div className="mt-4 em:mt-12 items-center w-[100%] mx-auto   flex flex-col md:flex-row [&amp;>div>p]:text-center em:[&amp;>div>p]:text-left">
-              <div className="w-full em:w-[70%] sm:w-1/2 mb-8 sm:mb-12 md:mb-[0] [&amp;>img]:max-w-[60%] [&amp;>img]:mr-auto md:[&amp;>img]:mr-0 [&amp;>img]:ml-auto  [&amp;>img]:ml-auto md:[&amp;>img]:ml-0 [&amp;>img]:mr-auto">
+            <div className="mt-4 em:mt-12 items-center w-[100%] mx-auto  flex flex-col md:flex-row ">
+              <div className="w-full em:w-[70%] sm:w-1/2 mb-8 sm:mb-12 md:mb-[0]  ">
                 <img
                   src={urlFor(item?.image).url()}
-                  width={755}
-                  height={184}
+                  width={303.99}
+                  height={74.15}
                   alt="renta"
+                  className="max-w-[60%] mr-auto ml-auto"
                 />
               </div>
-              <div className="w-full md:w-[70%] [&amp;>ul]:font-DM [&amp;>ul]:block [&amp;>ul]:list-none em:[&amp;>ul]:list-disc [&amp;>ul>li]:text-menu-title-text  [&amp;>ul>li]:mb-[0.625em] [&amp;>ul>li]:text-[14.175px] sm:[&amp;>ul>li]:text-[15.75px] xl:[&amp;>ul>li]:text-[18px] [&amp;>p]:text-[14.175px] sm:[&amp;>p]:text-[15.75px] xl:[&amp;>p]:text-[18px] [&amp;>p]:font-DM [&amp;>ul>li]:text-center em:[&amp;>ul>li]:text-left">
+              <div className=" [&>ul]:max-w-[85%] text-left [&>ul>li]:list-disc [&>ul>li]:pt-4 [&>ul>li]:text-lg [&>ul>li]:text-blue [&>ul>li]:opacity-60">
                 <PortableText value={item?.description} />
               </div>
             </div>

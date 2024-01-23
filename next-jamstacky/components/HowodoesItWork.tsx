@@ -37,7 +37,7 @@ const HowodoesItWork = async () => {
       {data.map((item) => {
         return (
           <>
-            <div key={item._id} className="bg-[#f4fbff]">
+            <div key={item._id} className="bg-[#f4fbff] px-14 py-6">
               <h2 className="text-[1.3rem] mb:text-left text-center mb:text-lefet mb:text-[2.15rem] font-[500] text-blue capitalize max-w-[75rem] my-[1rem] font-dmSans">
                 {item?.title}
               </h2>

@@ -46,7 +46,7 @@ const FAQsection = async () => {
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1-content"
                         id="panel1-header"
-                        className="relative text-blue text-[15.75px] xl:text-[18px] font-bold pr-[3rem] sm:pr-[4rem]  font-dmSans  after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[4%] md:after:right-[2%] after:w-full after:h-[1.1em] after:z-10 after:bg-no-repeat after:bg-[100%] after:transition-all after:duration-[0.2s]  py-[0.85rem] after:!rotate-0 "
+                        className="relative text-blue text-[15.75px] xl:text-[18px] font-bold pr-[3rem] sm:pr-[4rem]  font-dmSans  after:absolute after:top-[50%] after:translate-y-[-50%] after:right-[4%] md:after:right-[2%] after:w-full after:h-[1.1em] after:z-10 after:bg-no-repeat after:bg-[100%] after:transition-all after:duration-[0.2s]  py-[0.85rem] after:!rotate-0 mb-4"
                       >
                         {list?.question}
                       </AccordionSummary>

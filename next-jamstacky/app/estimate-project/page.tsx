@@ -38,7 +38,7 @@ const page = async () => {
                 <h6 className="font-bold leading-[1.25em] tracking-[0.012em] capitalize mb-4 text-lg">
                   {item?.title}
                 </h6>
-                <div className="[&amp;>h4]:font-bold [&amp;>h4]:leading-[1.25em] [&amp;>h4]:tracking-[0.012em] [&amp;>h4]:capitalize [&amp;>h4]:mb-4 text-[1.875em] [&amp;>h4>strong]:text-Cerise-red">
+                <div className="font-bold leading-[1.25rem] tracking-[0.012rem] capitalize mb-6 text-[1.875rem] ">
                   {item?.heading}
                 </div>
                 <form>
@@ -65,7 +65,7 @@ const page = async () => {
                       Select type of project:
                     </div>
                     <div className="lg:ml-4 lg:mr-0 my-4">
-                      <ul className="flex flex-wrap [&amp;>*:nth-child(1)]:ml-0">
+                      <ul className="flex flex-wrap [&>*:nth-child(1)]:ml-0">
                         <li className="relative cursor-pointer m-2 lg:mx-2 my-2">
                           <input
                             name="project_type"
@@ -74,7 +74,7 @@ const page = async () => {
                             className="absolute invisible cursor-pointer inline-block peer  my-0 inset-x-0"
                             value="Website"
                           />
-                          <label className="peer-checked:bg-Cerise-red peer-checked:px-[0.5em] peer-checked:py-[0.25em]  peer-checked:text-white-color hover:bg-red-400 h-10 text-sm cursor-pointer text-[0.875em] font-normal leading-[1.25em] rounded-[0.25em] px-2">
+                          <label className="peer-checked:bg-Cerise-red peer-checked:px-[0.5rem] py-4 peer-checked:py-[0.25rem]  peer-checked:text-white-color hover:bg-pink-500 h-10 text-sm cursor-pointer text-[0.875rem] font-normal leading-[1.25rem] rounded-[0.25rem] px-2">
                             Website
                           </label>
                         </li>
@@ -86,7 +86,7 @@ const page = async () => {
                             className="absolute invisible cursor-pointer inline-block peer  my-0 inset-x-0"
                             value="PWA"
                           />
-                          <label className="peer-checked:bg-Cerise-red peer-checked:px-[0.5em] peer-checked:py-[0.25em]  peer-checked:text-white-color  hover:bg-red-400  text-sm cursor-pointer text-[0.875em] font-normal leading-[1.25em] rounded-[0.25em] px-2">
+                          <label className="peer-checked:bg-Cerise-red peer-checked:px-[0.5rem] py-4 peer-checked:py-[0.25rem]  peer-checked:text-white-color hover:bg-pink-500 h-10 text-sm cursor-pointer text-[0.875rem] font-normal leading-[1.25rem] rounded-[0.25rem] px-2">
                             PWA
                           </label>
                         </li>
@@ -98,7 +98,7 @@ const page = async () => {
                             className="absolute invisible cursor-pointer inline-block peer  my-0 inset-x-0"
                             value="E-commerce"
                           />
-                          <label className="peer-checked:bg-Cerise-red peer-checked:px-[0.5em] peer-checked:py-[0.25em]  peer-checked:text-white-color  hover:bg-red-400 text-sm cursor-pointer text-[0.875em] font-normal leading-[1.25em] rounded-[0.25em] px-2">
+                          <label className="peer-checked:bg-Cerise-red peer-checked:px-[0.5rem] py-4 peer-checked:py-[0.25rem]  peer-checked:text-white-color hover:bg-pink-500 h-10 text-sm cursor-pointer text-[0.875rem] font-normal leading-[1.25rem] rounded-[0.25rem] px-2">
                             E-commerce
                           </label>
                         </li>
@@ -110,7 +110,7 @@ const page = async () => {
                             className="absolute invisible cursor-pointer inline-block peer  my-0 inset-x-0"
                             value="Other"
                           />
-                          <label className="peer-checked:bg-Cerise-red peer-checked:px-[0.5em] peer-checked:py-[0.25em]  peer-checked:text-white-color  hover:bg-red-400 text-sm cursor-pointer text-[0.875em] font-normal leading-[1.25em] rounded-[0.25em] px-2">
+                          <label className="peer-checked:bg-Cerise-red peer-checked:px-[0.5rem] py-4 peer-checked:py-[0.25rem]  peer-checked:text-white hover:bg-pink-500 h-10 text-sm cursor-pointer text-[0.875rem] font-normal leading-[1.25rem] rounded-[0.25rem] px-2">
                             Other
                           </label>
                         </li>
@@ -131,7 +131,7 @@ const page = async () => {
                         className="disabled:opacity-70 opacity-100 disabled:cursor-not-allowed   rounded-[56px]  contact-submit   text-sm esm:ext-base xl:text-[17px] capitalize font-semibold  text-white-color leading-[1.25em]  bg-dark-pink w-[250px] xl:w-[275px] h-[45px] em:h-[50px] md:h-[55px] xl:h-[60px]"
                       >
                         <div className="flex items-center justify-center">
-                          <p className="text-white bg-pink-200 h-7 rounded text-sm esm:text-base xl:text-[17px]  capitalize pb-0 font-semibold">
+                          <p className="text-white bg-pink-400  rounded text-sm esm:text-base xl:text-[17px]  capitalize font-semibold p-5">
                             Hire Jamstack Developer
                           </p>
                         </div>

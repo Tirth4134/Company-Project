@@ -11,8 +11,6 @@ interface ICaseStudy {
   core_web_title: string;
   volz_blog_title: PortableTextBlock[];
 
-  // description: string;
-  // profile_image: string;
   image: string;
   profile_image: {
     alt: string;
@@ -21,7 +19,6 @@ interface ICaseStudy {
   graph_image: string;
   alt: string;
 }
-/* i think my schema is not update beacause, currntly my schema image name is profile_image but is data is not shown and then i set image its working */
 async function getData() {
   const query = `*[_type == 'case_study']{
     _id,
@@ -47,7 +44,7 @@ const CaseStudy = async () => {
             <div key={item?._id}>
               <div className="max-w-[850px] mt-[3rem]  em:ml-0 em:text-left mb-[30px] md:mb-[50px] ">
                 <p className="font-medium leading-[1.25em] text-[20px] lg:text-[24px] xl:text-[28px] font-DM text-[#110462]">
-                  {/* {title_subtitle?.sub_title} */} {item?.heading}
+                  {item?.heading}
                 </p>
               </div>
 
@@ -59,20 +56,19 @@ const CaseStudy = async () => {
                       height={350}
                       width={350}
                       alt="image"
-                      // priority
                     />
                   </div>
 
                   <div className="mt-[1.5em] mb-0 mx-0">
-                    <h1 className="text-[17px] sm:text-[19px] xl:text-2xl font-normal leading-[1.5em] text-[#222549] font-DM">
+                    <h1 className="text-[17px] sm:text-[19px] xl:text-2xl font-normal leading-[1.5em] text-[#222549] font-dmSans">
                       {item?.core_web_title}
                     </h1>
                     <div>
                       <ul className="block mt-[1.5em]">
                         <Image
                           src={item?.graph_image}
-                          height={350}
-                          width={350}
+                          height={450}
+                          width={550}
                           alt="image"
                           // priority
                         />

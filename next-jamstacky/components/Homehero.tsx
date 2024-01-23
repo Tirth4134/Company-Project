@@ -44,14 +44,8 @@ async function getData() {
 
 const Homehero = async () => {
   const data = (await getData()) as IHomehero[];
-  // 
   return (
-    <div
-    // className={clsx(
-    //   "bg-hero-gradient animate-gradient  bg-heroBgsize",
-    //   section_theme ?? "bg-white"
-    // )}
-    >
+    <div>
       {data?.map((item) => {
         return (
           <div className="container bg-gradient">
@@ -59,14 +53,10 @@ const Homehero = async () => {
               <div className="w-full lg:w-[60%]">
                 <div className="relative banner-text-content">
                   <div className="flex xl:items-center  flex-col-reverse xl:flex-row justify-start">
-                    <h1 className="inline-block text-[25.2px] esm:text-[28.35px]  md:text-[31.5px] emd:text-[40.25px] lg:text-[46px] font-bold leading-[1.25em] lg:max-w-[32rem] text-[#110462] mb-[0.5em] font-DM">
+                    <h1 className="inline-block text-[25.2px] esm:text-[28.35px]  md:text-[31.5px] emd:text-[40.25px] lg:text-[46px] font-bold leading-[1.25em] lg:max-w-[32rem] before:absolute relative before:bg-[url(/arrow.svg)] before:content-['']   before:bg-no-repeat before:w-[1.5rem] before:xl:w-[2rem] before:h-[2.5rem] before:xl:h-[2.5rem] before:left-[35.9rem] before:top-[2rem] text-[#110462] mb-[0.5em] font-dmSans">
                       {item?.hero_title}
                     </h1>
-
-                    <div
-                      className="max-w-[100px] 2xl:max-w-[unset] mb-4 ml-0 xl:ml-[15px] inline-flex relative lg:mt-[-1.5rem] before:bg-arrowSizeRespon vem:before:bg-arrowSize
-                    before:content-[''] before:bg-none before:bg-no-repeat before:w-[1.5em] before:xl:w-[2rem] before:h-[1.1rem] before:xl:h-[1.5rem] before:absolute  [&>img]:max-w-[auto] sm:[&>img]:max-w-[8.5em] [&>img]:w-full [&>img]:h-full animation-circle"
-                    >
+                    <div className="max-w-[100px] 2xl:max-w-[unset] mb-4 ml-0 xl:ml-[15px] inline-flex relative lg:mt-[-1.5rem]  before:absolute [&>img]:max-w-[auto] sm:[&>img]:max-w-[8.5em] [&>img]:w-full [&>img]:h-full animation-circle">
                       <Image
                         src={item?.hero_image}
                         height={100}

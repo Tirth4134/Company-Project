@@ -29,19 +29,24 @@ const What_we_build = async () => {
       {data.map((item: any) => {
         return (
           <div key={item?._id}>
-            <h4>{item?.title}</h4>
+            <h4 className="text-center font-medium leading-[1.25rem] uppercase text-lightblue tracking-wider mb-[1rem] px-[2rem] md:px-[3rem] py-0 text-[14.175px] sm:text-[15.75px] xl:text-[18px] font-dmSans">
+              - {item?.title} -
+            </h4>
             <div>
               {item?.building_detail.map((list: any) => {
                 return (
-                  <div>
-                    <div>
+                  <div
+                    className="flex pt-12 px-10 justify-center items-center gap-14"
+                    key={list?._id}
+                  >
+                    <div className="w-2/3">
                       <PortableText value={list?.description} />
                     </div>
                     <div>
                       <img
                         src={urlFor(list?.image).url()}
-                        width={150}
-                        height={100}
+                        width={250}
+                        height={150}
                       />
                     </div>
                   </div>

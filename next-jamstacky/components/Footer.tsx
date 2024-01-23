@@ -51,7 +51,7 @@ const Footer = async () => {
         return (
           <div key={item?._id} className="bg-whitecolor shadow-footerShadow">
             {/* top section */}
-            <div className="max-w-[90rem] m-auto py-[1rem] mb:py-[2.63rem] px-[1rem] gap-[1rem]  md:flex-row flex items-center justify-center md:justify-evenly">
+            <div className="max-w-[90rem] m-auto mt-8 py-[1rem] mb:py-[2.63rem] px-[1rem] gap-[1rem]  md:flex-row flex items-center justify-center md:justify-evenly">
               <div className="[&>h5]:text-[1.5rem] [&>h5]:font-semibold [&>h5]:text-titlecolor [&>h5]:mb:text-left [&>h5]:max-w-[32.8rem] [&>h5]:font-dmSans [&>p]:text-[1rem] [&>p]:font-[400] [&>p]:text-footertextcolor [&>p]:max-w-[49.8rem] [&>p]:my-[0.9rem] [&>p]:text-center [&>p]:mb:text-left [&>p]:font-dmSans  [&>p]:leading-[1.5rem] ">
                 <PortableText value={item?.footer_text} />
               </div>

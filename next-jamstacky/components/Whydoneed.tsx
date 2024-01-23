@@ -51,7 +51,6 @@ const Whydoneed = async () => {
               </div>
               <div>
                 {item?.jamstack_detail.map((list: any) => {
-                  
                   return (
                     <div className="">
                       <div className="py-4 [&>p]:text-blue [&>p]:opacity-70 [&>p]:text-base">
