@@ -41,7 +41,7 @@ async function getData() {
 
 const Footer = async () => {
   const data = (await getData()) as Ifooter[];
-  // 
+  //
 
   return (
     <div id="introcall-section">

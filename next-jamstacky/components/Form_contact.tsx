@@ -22,14 +22,12 @@ async function getData() {
 
 const Form_contact = async () => {
   const data = (await getData()) as Iform[];
-  
 
   return (
     <div>
       {data.map((item: any) => {
-
         return (
-          <div>
+          <div className="px-10">
             <div className="container">
               <div className="contactus-form-inner bg-blue rounded-lg px-[1.5em] sm:px-[2.5em] pt-[1.5em] sm:pt-[2.5em] pb-[4em] sm:pb-[5em]">
                 <div className="mb-[2.5em] max-w-full em:max-w-[75%] [&>h3]:mb-[0] text-white [&>h3]:text-left [&>h3]:font-medium [&>h3]:text-[21px] xl:[&>h3]:text-2xl [&>p]:text-white  [&>p]:opacity-70 [&>p]:text-sm xl:[&>p]:text-base [&>p]:mt-[0.97em]  [&>p]:text-left">
@@ -153,7 +151,7 @@ const Form_contact = async () => {
                                 className="absolute invisible left-0 right-0  inline-block peer  cursor-pointer"
                                 value="Web Design"
                               />
-                              <label className="peer-checked:bg-red-700 text-white border-[0.0625em] border-pink-700 rounded-[0.26044rem] text-xs cursor-pointer py-[0.42rem] px-[0.8rem] ">
+                              <label className="bg-pink-700 text-white border-[0.0625em] border-pink-700 rounded-[0.26044rem] text-xs cursor-pointer py-[0.42rem] px-[0.8rem] ">
                                 Web Design
                               </label>
                             </li>
@@ -238,14 +236,16 @@ const Form_contact = async () => {
                 </form>
               </div>
             </div>
-            <div className="contact-map [&>div>iframe]:w-full [&>div>iframe]:rounded-lg [&>div>iframe]:h-[20em] md:[&>div>iframe]:h-[30em]  my-6 ">
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1529.2635894013035!2d72.50069154977834!3d23.07888740446473!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9d61b056cb41%3A0x1e36380ab233f9cf!2sJamstacky%20-%20JAMstack%20and%20Headless%20Web%20Development%20Agency!5e0!3m2!1sen!2sin!4v1675059278330!5m2!1sen!2sin"
-            width="600" height="450"  loading="lazy"
-           >
-            </iframe>
-        </div>
-    </div>
+            <div className="contact-map [&>div>iframe]:w-full [&>div>iframe]:rounded-lg [&>div>iframe]:h-[20em] md:[&>div>iframe]:h-[30em] pb-10">
+              <div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1529.2635894013035!2d72.50069154977834!3d23.07888740446473!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9d61b056cb41%3A0x1e36380ab233f9cf!2sJamstacky%20-%20JAMstack%20and%20Headless%20Web%20Development%20Agency!5e0!3m2!1sen!2sin!4v1675059278330!5m2!1sen!2sin"
+                  width="600"
+                  height="450"
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
           </div>
         );
       })}
